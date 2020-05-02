@@ -1,0 +1,47 @@
+.Banner {
+  display: flex;
+  min-height: 100vh;
+  position: relative;
+  background-color: #08091b;
+  &::before,
+  &::after {
+    width: 100%;
+    content: " ";
+    min-height: 100vh;
+    position: absolute;
+    background-size: contain;
+    background-position: 60% 100%;
+    background-repeat: no-repeat;
+  }
+  &::before {
+    background-image: url(../../../assets/images/img/shape/shape-s.png),
+      url(../../../assets/images/img/shape/shape.png);
+  }
+  .particles {
+    top: 0;
+    position: absolute;
+  }
+
+  .banner_main {
+    flex-wrap: nowrap;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: calc(100vh - 15rem);
+    .column {
+      flex: 1 50%;
+      &:first-child{
+        h1 {
+          color: #fff;
+          font-size: 4rem;
+          text-align: center;
+        }
+        p {
+          color: #fff;
+          font-size: 1.5rem;
+          text-align: justify;
+        }
+      }
+    }
+  }
+}

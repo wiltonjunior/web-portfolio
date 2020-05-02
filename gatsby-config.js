@@ -1,3 +1,5 @@
+const path = require("path")
+
 module.exports = {
   siteMetadata: {
     title: `Gatsby Default Starter`,
@@ -6,6 +8,7 @@ module.exports = {
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
+    `gatsby-plugin-sass`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -27,8 +30,17 @@ module.exports = {
         icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
       },
     },
-    // this (optional) plugin enables Progressive Web App + Offline functionality
-    // To learn more, visit: https://gatsby.dev/offline
+    {
+      resolve: "gatsby-plugin-root-import",
+      options: {
+        "@pages": path.join(__dirname, "src/pages"),
+        "@svg": path.join(__dirname, "src/assets/images/svg"),
+        "@images": path.join(__dirname, "src/assets/images/img"),
+        "@components": path.join(__dirname, "src/shared/components"),
+      },
+    }
     // `gatsby-plugin-offline`,
+    // To learn more, visit: https://gatsby.dev/offline
+    // this (optional) plugin enables Progressive Web App + Offline functionality
   ],
 }

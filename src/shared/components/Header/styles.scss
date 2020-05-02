@@ -1,0 +1,45 @@
+.Header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  .logo {
+    img {
+      width: 25rem;
+    }
+    display: flex;
+    color: #fff;
+    font-size: 3rem;
+    strong {
+      color: #407BFF
+    }
+    .fistname {
+      font-weight: 600;
+    }
+    .lastname {
+      font-weight: 600;
+    }
+    &::before {
+      font-weight: 600;
+      content: "<";
+    }
+    &::after {
+      font-weight: 600;
+      content: "/>";
+    }
+  }
+  .menu {
+    ul {
+      display: flex;
+      li {
+        margin: 2.5rem;
+        color: #fff;
+        font-size: 1.5rem;
+        list-style: none;
+      }
+    }
+  }
+  .menu {
+    display: flex;
+    justify-content: space-between;
+  }
+}
