@@ -2,9 +2,10 @@ import React from "react"
 import Particles from "react-particles-js"
 
 import Header from "@components/Header"
+import Button from "@components/Button"
 import Container from "@components/Container"
 
-import image from "@svg/banner.svg"
+import Image from "@svg/inline/banner.inline.svg"
 
 import "./styles.scss"
 
@@ -12,15 +13,15 @@ const Banner = () => {
   const params = {
     particles: {
       number: { value: 30, density: { enable: true, value_area: 1000 } },
-      color: { value: "#fff" },
+      color: { value: "#407BFF" },
       shape: {
         type: "circle",
-        opacity: 0.1,
-        stroke: { width: 0, color: "#fff" },
+        opacity: 0.4,
+        stroke: { width: 0, color: "#407BFF" },
         polygon: { nb_sides: 5 },
       },
       opacity: {
-        value: 0.1,
+        value: 0.3,
         random: false,
         anim: {
           enable: false,
@@ -84,21 +85,31 @@ const Banner = () => {
         </div>
         <div className="banner_main">
           <div className="column">
-            <h1>Full Stack Developer</h1>
-            <p>
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's
-            </p>
-            <p>
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's
-
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's
-            </p>
+            <div className="title">
+              <h1>Wilton Santos Junior,</h1>
+              <p>Full Stack Developer</p>
+            </div>
+            <div className="description">
+              <p>
+                Programador full-stack, apaixonado pelo desenvolvedor de
+                software, com sólida formação acadêmica. Capacidade de trabalhar
+                em equipe e solucionar problemas de forma rápida.
+              </p>
+              <p>
+                Habilidade de manter e aprimorar o softwares com o objetivo de
+                melhorar a funcionalidade operacional de acordo com os
+                requisitos de negócios. Possuo conhecimento em linguagens de
+                programação de software, como , JavaScript, Java e as principais
+                frameworks front-end como, React, Angular e Vuejs.
+              </p>
+            </div>
+            <div className="actions">
+              <Button>Portfolio</Button>
+              <Button basic>Curriculo</Button>
+            </div>
           </div>
           <div className="column">
-            <img src={image} alt="banner"></img>
+            <Image />
           </div>
         </div>
       </Container>
