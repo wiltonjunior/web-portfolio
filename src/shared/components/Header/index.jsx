@@ -1,8 +1,18 @@
 import React from "react"
 
+import Button from "@components/Button"
+
 import "./styles.scss"
 
 const Header = () => {
+  const itens = [
+    { title: "Home", className: "active" },
+    { title: "Sobre" },
+    { title: "Portfolio" },
+    { title: "Contato" },
+    { component: () => <Button basic>Acessar CV</Button> },
+  ]
+
   return (
     <div className="Header">
       <div className="logo">
@@ -12,10 +22,11 @@ const Header = () => {
       </div>
       <div className="menu">
         <ul>
-          <li>Home</li>
-          <li>Sobre</li>
-          <li>Portfolio</li>
-          <li>Contato</li>
+          {itens.map((item, index) => (
+            <li key={index} className={item.className || ""}>
+              {item.component ? item.component() : item.title}
+            </li>
+          ))}
         </ul>
       </div>
     </div>

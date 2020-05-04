@@ -1,0 +1,55 @@
+/* FONTS ------------------------------------------------------------ * /
+
+/* Montserrat Light */
+
+@font-face {
+  font-display: swap;
+  unicode-range: U+000-5FF;
+  font-family: "Montserrat Light";
+  src: url("/src/assets/fonts/Montserrat/Montserrat-Light.ttf"),
+    url("/src/assets/fonts/Montserrat/Montserrat-LightItalic.ttf");
+}
+
+/* Montserrat Regular */
+
+@font-face {
+  font-display: swap;
+  unicode-range: U+000-5FF;
+  font-family: "Montserrat Regular";
+  src: url("/src/assets/fonts/Montserrat/Montserrat-Regular.ttf") format("truetype");
+}
+
+/* Montserrat Bold */
+
+@font-face {
+  font-display: swap;
+  unicode-range: U+000-5FF;
+  font-family: "Montserrat Bold";
+  src: url("/src/assets/fonts/Montserrat/Montserrat-Bold.ttf"),
+  url("/src/assets/fonts/Montserrat/Montserrat-BoldItalic.ttf")
+  format("truetype");
+}
+
+/* Montserrat Semibold */
+
+@font-face {
+  font-display: swap;
+  unicode-range: U+000-5FF;
+  font-family: "Montserrat Semibold";
+  src: url("/src/assets/fonts/Montserrat/Montserrat-SemiBold.ttf"),
+  url("/src/assets/fonts/Montserrat/Montserrat-SemiBoldItalic.ttf")
+  format("truetype");
+}
+
+/* Montserrat ExtraBold */
+
+@font-face {
+  font-display: swap;
+  unicode-range: U+000-5FF;
+  font-family: "Montserrat ExtraBold";
+  src: url("/static/fonts/open-sans/Montserrat-ExtraBold.ttf"),
+  url("/src/assets/fonts/Montserrat/Montserrat-ExtraBoldItalic.ttf")
+  format("truetype");
+  
+}
+

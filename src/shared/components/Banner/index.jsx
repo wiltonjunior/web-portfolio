@@ -105,7 +105,7 @@ const Banner = () => {
             </div>
             <div className="actions">
               <Button>Portfolio</Button>
-              <Button basic>Curriculo</Button>
+              <Button basic>Contato</Button>
             </div>
           </div>
           <div className="column">
