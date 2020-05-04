@@ -1,0 +1,111 @@
+@import "src/assets/sass/variables.scss";
+
+.Section {
+  position: relative;
+  .section-head {
+    height: 15rem;
+    padding-top: 6rem;
+    text-align: center;
+    .section-head-line {
+      position: absolute;
+      height: 60px;
+      width: 60px;
+      left: 50%;
+      top: 10rem;
+      opacity: 0.2;
+      border-radius: 50%;
+      background: transparent;
+      transform: rotate(45deg) translate(-50%, 0);
+      .line-1,
+      .line-2,
+      .line-3,
+      .line-4,
+      .line-5,
+      .line-6,
+      .line-7,
+      .line-8 {
+        position: absolute;
+        content: "";
+        border-radius: 50%;
+        background: transparent;
+        border-top: 1px solid #46bdf4;
+        // border-left: 1px solid #46bdf4;
+      }
+      .line-1 {
+        top: -15px;
+        left: -15px;
+        height: 90px;
+        width: 90px;
+      }
+      .line-2 {
+        top: -30px;
+        left: -30px;
+        height: 120px;
+        width: 120px;
+      }
+      .line-3 {
+        top: -45px;
+        left: -45px;
+        height: 150px;
+        width: 150px;
+      }
+      .line-4 {
+        top: -60px;
+        left: -60px;
+        height: 180px;
+        width: 180px;
+      }
+      .line-5 {
+        top: -75px;
+        left: -75px;
+        height: 210px;
+        width: 210px;
+      }
+      .line-6 {
+        top: -90px;
+        left: -90px;
+        height: 240px;
+        width: 240px;
+      }
+      .line-7 {
+        top: -105px;
+        left: -105px;
+        height: 270px;
+        width: 270px;
+      }
+      .line-8 {
+        top: -120px;
+        left: -120px;
+        height: 300px;
+        width: 300px;
+      }
+    }
+
+    .title {
+      color: #fff;
+      margin: auto;
+      padding: 3rem 0;
+      font-size: 3rem;
+      text-transform: uppercase;
+      &::before {
+        left: 50%;
+        top: 50%;
+        opacity: 0.2;
+        line-height: 0.9;
+        color: #28384c;
+        font-weight: 700;
+        position: absolute;
+        content: attr(title);
+        white-space: nowrap;
+        text-transform: uppercase;
+        font-family: $font-regular;
+        transform: translate(-50%, -50%);
+        font-size: 10rem;
+      }
+    }
+
+    .description {
+      color: #fff;
+    }
+  }
+}

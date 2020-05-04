@@ -44,8 +44,8 @@
     background-repeat: no-repeat;
   }
   &::before {
-    background-image: url(../../../assets/images/img/shape/shape-s.png),
-      url(../../../assets/images/img/shape/shape.png);
+    background-image: url(../../../assets/images/img/shape/shape.png),
+      url(../../../assets/images/img/mask/mask.svg);
   }
   .particles {
     top: 0;

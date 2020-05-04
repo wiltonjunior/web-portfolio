@@ -8,7 +8,7 @@ const Header = () => {
   const itens = [
     { title: "Home", className: "active" },
     { title: "Sobre" },
-    { title: "Portfolio" },
+    { title: "Cases" },
     { title: "Contato" },
     { component: () => <Button basic>Acessar CV</Button> },
   ]
