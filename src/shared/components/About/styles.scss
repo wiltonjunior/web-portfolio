@@ -1,3 +1,91 @@
 .About {
+  min-height: 100vh;
   background-color: #0c0d25;
+  &::before {
+    width: 100%;
+    content: " ";
+    min-height: 100vh;
+    position: absolute;
+    background-size: contain;
+    background-position: 60% 100%;
+    background-repeat: no-repeat;
+    background-image: url(../../../assets/images/img/shape/graphic-b.png);
+  }
+  .about_main {
+    display: flex;
+    .column {
+      flex: 1 50%;
+      &:first-child {
+        padding: 2rem;
+        .header {
+          .article {
+            margin: 2rem 0;
+            h2 {
+              margin: 0;
+              color: #fff;
+              display: flex;
+              font-size: 25px;
+              position: relative;
+              &::before {
+                content: " ";
+                left: 0;
+                top: 13px;
+                width: 10px;
+                height: 10px;
+                margin-right: 10px;
+                position: relative;
+                border-radius: 100%;
+                background-color: #407bff;
+              }
+            }
+            p {
+              margin: 0;
+              margin-top: 10px;
+              color: #97afd5;
+              font-size: 18px;
+              font-style: italic;
+            }
+          }
+        }
+      }
+      &:last-child {
+        .image_user {
+          position: relative;
+          margin: 0 5rem;
+          img {
+            z-index: 10;
+            width: 100%;
+            height: 100%;
+            border-radius: 20px;
+            position: relative;
+            filter: grayscale(70%);
+            box-shadow: 0 0.6rem 2.5rem rgba(99, 99, 99, 0.175);
+          }
+          &::before {
+            left: 0;
+            top: 0px;
+            content: "";
+            height: 99%;
+            width: 100%;
+            z-index: 100;
+            position: absolute;
+            border-radius: 20px;
+            background: rgba(43, 88, 245, .3);
+          }
+
+          &::after {
+            content: " ";
+            left: 35px;
+            bottom: -30px;
+            width: 100%;
+            opacity: 0.1;
+            height: 70%;
+            border-radius: 10px;
+            position: absolute;
+            background-color: #407bff;
+          }
+        }
+      }
+    }
+  }
 }

@@ -1,3 +1,11 @@
+@import "src/assets/sass/variables.scss";
+
 .Container {
-    margin: 0 15rem;
+  margin: 0 15rem;
+}
+
+@media #{$max-media-desktop-medium} {
+  .Container {
+    margin: 0 5rem;
+  }
 }

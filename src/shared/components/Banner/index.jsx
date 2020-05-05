@@ -86,7 +86,7 @@ const Banner = () => {
         <div className="banner_main">
           <div className="column">
             <div className="title">
-              <h1>Wilton Santos Junior,</h1>
+              <h1>Wilton Junior,</h1>
               <p>Full Stack Developer</p>
             </div>
             <div className="description">

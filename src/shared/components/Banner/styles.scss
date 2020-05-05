@@ -64,6 +64,8 @@
       &:first-child {
         padding-right: 4rem;
         .title {
+          display: flex;
+          align-items: flex-end;
           h1 {
             margin: 0;
             color: #fff;
@@ -72,7 +74,8 @@
           p {
             margin: 0;
             color: #fff;
-            font-size: 25px;
+            font-size: 35px;
+            margin-left: 10px;
             font-style: italic;
           }
           margin-bottom: 2rem;
