@@ -2,6 +2,7 @@ import React from "react"
 
 import Banner from "@components/Banner"
 import About from "@components/About"
+import Cases from "@components/Cases"
 import Contato from "@components/Contato"
 import Footer from "@components/Footer"
 
@@ -10,7 +11,8 @@ const Home = () => {
     <>
       <Banner />
       <About />
-      <Contato/>
+      <Cases />
+      <Contato />
       <Footer />
     </>
   )

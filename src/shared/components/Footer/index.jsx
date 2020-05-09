@@ -9,7 +9,7 @@ const Footer = () => {
     <div className="Footer">
       <Container>
         <div className="Footer_main">
-      
+        Copyright © 2020 WiltonJunior. All Rights Reserved
         </div>
       </Container>
     </div>

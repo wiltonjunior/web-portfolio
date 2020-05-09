@@ -9,7 +9,7 @@ import Image from "@svg/inline/banner.inline.svg"
 
 import "./styles.scss"
 
-const Banner = () => {
+const Banner = () => { 
   const params = {
     particles: {
       number: { value: 30, density: { enable: true, value_area: 1000 } },
@@ -79,10 +79,10 @@ const Banner = () => {
   return (
     <div className="Banner">
       <Particles canvasClassName="particles" params={params} />
+      <div className="banner_header">
+        <Header />
+      </div>
       <Container>
-        <div className="banner_header">
-          <Header />
-        </div>
         <div className="banner_main">
           <div className="column">
             <div className="title">

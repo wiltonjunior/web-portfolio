@@ -1,0 +1,27 @@
+@import "src/assets/sass/variables.scss";
+
+@keyframes rotatecw {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes rotateacw {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+
+.Cases {
+  display: flex;
+  margin-top: 3rem;
+  min-height: 100vh;
+  position: relative;
+  justify-content: center;
+  background-color: #08091b;
+}
