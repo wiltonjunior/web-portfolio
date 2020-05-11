@@ -5,7 +5,7 @@ import Container from "@components/Container"
 
 import "./styles.scss"
 
-const Case = () => {
+const CardCase = () => {
   const item = {
     title: "Cases",
     shadow: "Portfolio",
@@ -22,4 +22,4 @@ const Case = () => {
   )
 }
 
-export default Case
+export default CardCase
