@@ -1,23 +1,27 @@
 import React from "react"
 
-import Section from "@components/Section"
-import Container from "@components/Container"
-
 import "./styles.scss"
 
 const CardCase = () => {
-  const item = {
-    title: "Cases",
-    shadow: "Portfolio",
-    description: "Navegue em meus tralhos."
-  }
   return (
-    <div className="Cases">
-      <Container>
-        <div className="cases_main">
-        <Section item={item} />
+    <div className="CardCase">
+      <div className="column"></div>
+      <div className="column">
+        <div className="header">
+          <h1 className="title">Mais Milhas</h1>
+          <p className="description">
+            Uma plataforma para a compra e venda de milhas aéreas
+          </p>
         </div>
-      </Container>
+        <div className="colunm-body">
+          <p className="article">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            Exercitationem quidem, unde distinctio ab excepturi sit ullam
+            deleniti porro et tempore earum voluptas rerum vitae ratione nam
+            enim aperiam. Ratione, nihil?
+          </p>
+        </div>
+      </div>
     </div>
   )
 }

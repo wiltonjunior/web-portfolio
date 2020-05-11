@@ -17,11 +17,9 @@
   }
 }
 
-.Cases {
+.CardCase {
   display: flex;
-  margin-top: 3rem;
-  position: relative;
-  justify-content: center;
-  background-color: #08091b;
-  min-height: calc(100vh - 300px);
+  .column {
+    flex: 1 50%;
+  }
 }
