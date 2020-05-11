@@ -20,6 +20,13 @@
 .CardCase {
   display: flex;
   .column {
+    color: #fff;
     flex: 1 50%;
+    &:first-child{
+      .card_image{
+        padding: 20px;
+        background-color: inherit;
+      }
+    }
   }
 }

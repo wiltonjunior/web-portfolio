@@ -5,7 +5,13 @@ import "./styles.scss"
 const CardCase = () => {
   return (
     <div className="CardCase">
-      <div className="column"></div>
+      <div className="column">
+
+        <div className="card_image">
+
+        </div>
+
+      </div>
       <div className="column">
         <div className="header">
           <h1 className="title">Mais Milhas</h1>
