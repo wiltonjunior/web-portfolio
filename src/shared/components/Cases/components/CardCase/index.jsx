@@ -13,7 +13,8 @@ const CardCase = () => {
 
       </div>
       <div className="column">
-        <div className="header">
+          <div className="card_description">
+          <div className="header">
           <h1 className="title">Mais Milhas</h1>
           <p className="description">
             Uma plataforma para a compra e venda de milhas aéreas
@@ -27,6 +28,7 @@ const CardCase = () => {
             enim aperiam. Ratione, nihil?
           </p>
         </div>
+          </div>
       </div>
     </div>
   )
