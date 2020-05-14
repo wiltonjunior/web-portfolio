@@ -31,7 +31,7 @@ const Case = () => {
     showSlides((slideIndex = n))
   }
 
-  const showSlides = n => {
+  const showSlides = (index) => {
     const slides = document.getElementsByClassName("mySlides")
     const dots = document.getElementsByClassName("dot")
     if (n > slides.length) {
@@ -40,11 +40,11 @@ const Case = () => {
     if (n < 1) {
       slideIndex = slides.length
     }
-    for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none"
+    for (index = 0; index < slides.length; index++) {
+      slides[index].style.display = "none"
     }
-    for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "")
+    for (index = 0; index < dots.length; index++) {
+      dots[index].className = dots[index].className.replace(" active", "")
     }
     slides[slideIndex - 1].style.display = "block"
     dots[slideIndex - 1].className += " active"
