@@ -31,13 +31,14 @@ const Case = () => {
     showSlides((slideIndex = n))
   }
 
-  const showSlides = (index) => {
+  const showSlides = (number) => {
+    let index;
     const slides = document.getElementsByClassName("mySlides")
     const dots = document.getElementsByClassName("dot")
-    if (n > slides.length) {
+    if (number > slides.length) {
       slideIndex = 1
     }
-    if (n < 1) {
+    if (number < 1) {
       slideIndex = slides.length
     }
     for (index = 0; index < slides.length; index++) {
