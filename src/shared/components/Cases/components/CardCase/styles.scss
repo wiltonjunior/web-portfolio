@@ -25,7 +25,9 @@
     &:first-child{
       .card_image{
         padding: 20px;
+        height: 400px;
         background-color: inherit;
+        border-radius: solid 1px #000;
       }
     }
   }
