@@ -23,11 +23,14 @@ const Case = () => {
 
   // Set classes
   const setInitialClasses = () => {
-    // Targets the previous, current, and next items
+    if(items[totalItems - 1]){
+          // Targets the previous, current, and next items
     // This assumes there are at least three items.
     items[totalItems - 1].classList.add("prev")
     items[0].classList.add("active")
     items[1].classList.add("next")
+    }
+
   }
   // Set event listeners
   const setEventListeners = () => {
@@ -123,7 +126,7 @@ const Case = () => {
     setInitialClasses()
     setEventListeners()
     // Set moving to false so that the carousel becomes interactive
-    moving = false
+    moving = true
   }
 
 
@@ -157,12 +160,10 @@ const Case = () => {
               src="https://randomuser.me/api/portraits/women/43.jpg"
             />
             <img
-               alt="image"
               className="carousel__photo"
               src="https://randomuser.me/api/portraits/women/44.jpg"
             />
             <img
-               alt="image"
               className="carousel__photo"
               src="https://randomuser.me/api/portraits/women/45.jpg"
             />
