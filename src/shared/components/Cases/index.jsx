@@ -104,12 +104,12 @@ const Case = () => {
         <div className="carousel-wrapper">
           <div ref={carrocel} className="carousel">
 
-            {cases.map((item, index) => 
+            {/* {cases.map((item, index) => 
             <CardCase key={index} item={item} />
-            )}
+            )} */}
 
-            <div onClick={moveNext} className="carousel__button--next"></div>
-            <div onClick={movePrev} className="carousel__button--prev"></div>
+            <div onClick={moveNext} className="next"></div>
+            <div onClick={movePrev} className="prev"></div>
           </div>
         </div>
         {/* <CardCase /> */}
