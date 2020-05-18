@@ -56,8 +56,8 @@
         width: 100%;
         margin: auto;
         z-index: 10;
-        padding: 1rem 4rem;
         position: absolute;
+        padding-right: 4rem;
         transition: transform 0.5s, opacity 0.5s, z-index 0.5s;
         &.initial,
         &.active {
@@ -111,18 +111,20 @@
         position: relative;
         &::before {
           content: " ";
+          top: 50%;
+          left: 50%;
           width: 10px;
           height: 10px;
+          opacity: .5;
           position: absolute;
           border-radius: 50%;
           border: solid 1px #fff;
-          top: 50%;
-          left: 50%;
+          background-color: #fff;
           transform: translate(-50%, -50%);
         }
         &.active {
           &::before {
-            background-color: #fff;
+            opacity: 1;
           }
         }
       }

@@ -18,25 +18,32 @@
 }
 
 .CardCase {
-  display: flex;
-  .column {
-    color: #fff;
-    flex: 1 50%;
-    &:first-child {
-      .card_image {
-        margin: 20px;
-        height: 400px;
-        border: solid 1px #000;
-        background-color: #0c0d25;
+  .card_body {
+    display: flex;
+    .column {
+      color: #fff;
+      flex: 1 50%;
+      &:first-child {
+        .card_image {
+          margin: 20px;
+          height: 400px;
+          border: solid 1px #000;
+          background-color: #0c0d25;
+        }
+      }
+      &:last-child {
+        .card_description {
+          display: flex;
+          height: 100%;
+          flex-direction: column;
+          justify-content: center;
+        }
       }
     }
-    &:last-child {
-      .card_description {
-        display: flex;
-        height: 100%;
-        flex-direction: column;
-        justify-content: center;
-      }
-    }
+  }
+  .card_footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 }
