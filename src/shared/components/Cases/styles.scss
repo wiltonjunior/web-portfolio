@@ -17,6 +17,16 @@
   }
 }
 
+@mixin arrow-model {
+  content: " ";
+  top: 22px;
+  width: 20px;
+  height: 3px;
+  position: absolute;
+  border-radius: 10px;
+  background-color: #fff;
+}
+
 .Cases {
   display: flex;
   margin: 3rem 0;
@@ -25,55 +35,96 @@
   background-color: #08091b;
   min-height: calc(100vh - 300px);
 
+  .Container {
+    position: relative;
+    width: 100%;
+  }
+
   .carousel-wrapper * {
     box-sizing: border-box;
   }
 
   .carousel-wrapper {
     overflow: hidden;
-    width: 90%;
+    width: 100%;
     .carousel {
       width: 100%;
-      height: 100vh;
       transform-style: preserve-3d;
-      .carousel__photo {
-        opacity: 0;
-        position: absolute;
+      .CardCase {
         top: 0;
+        opacity: 0;
         width: 100%;
         margin: auto;
+        z-index: 10;
         padding: 1rem 4rem;
-        z-index: 100;
+        position: absolute;
         transition: transform 0.5s, opacity 0.5s, z-index 0.5s;
+        &.initial,
+        &.active {
+          opacity: 1;
+          position: relative;
+          z-index: 100;
+        }
       }
-      .next{
-        position: relative;
+    }
+    .controls {
+      right: 0;
+      top: 50%;
+      z-index: 100;
+      position: absolute;
+      .next {
         width: 50px;
         height: 50px;
-        border-radius: 100%;
-        border: solid 1px #fff;
-       &::before{
-         content: ' ';
-         top: 18px;
-         right: 20px;
-         width: 20px;
-         height: 3px;
-         position: absolute;
-         border-radius: 10px;
-         transform: rotate(-45deg);
-         background-color: #fff;
-       }
-       &::after{
-        content: ' ';
-        top: 18px;
-        left: 20px;
-        width: 20px;
-        height: 3px;
-        position: absolute;
-        border-radius: 10px;
-        transform: rotate(45deg);
-        background-color: #fff;
+        cursor: pointer;
+        position: relative;
+        &::before {
+          right: 20px;
+          @include arrow-model;
+          transform: rotate(-45deg);
+        }
+        &::after {
+          left: 22px;
+          @include arrow-model;
+          transform: rotate(45deg);
+        }
       }
+      .prev {
+        width: 50px;
+        height: 50px;
+        cursor: pointer;
+        position: relative;
+        &::before {
+          right: 20px;
+          @include arrow-model;
+          transform: rotate(45deg);
+        }
+        &::after {
+          left: 22px;
+          @include arrow-model;
+          transform: rotate(-45deg);
+        }
+      }
+      .point {
+        cursor: pointer;
+        display: block;
+        padding: 15px;
+        position: relative;
+        &::before {
+          content: " ";
+          width: 10px;
+          height: 10px;
+          position: absolute;
+          border-radius: 50%;
+          border: solid 1px #fff;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+        }
+        &.active {
+          &::before {
+            background-color: #fff;
+          }
+        }
       }
     }
   }

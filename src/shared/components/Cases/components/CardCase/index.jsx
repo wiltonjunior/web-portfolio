@@ -2,10 +2,10 @@ import React from "react"
 
 import "./styles.scss"
 
-const CardCase = ({ item }) => {
+const CardCase = ({ item, active }) => {
   const { title, description, articles = [] } = item || {}
   return (
-    <div className="CardCase">
+    <div className={`CardCase ${active ? "active" : ""}`}>
       <div className="column">
         <div className="card_image"></div>
       </div>
