@@ -28,25 +28,41 @@ const Header = () => {
     { component: () => <Button basic>Acessar CV</Button> },
   ]
 
+  const logo = () => {
+    return (
+      <div className="logo">
+        <span className="fistname">Wilton</span>
+        <strong>.</strong>
+        <span className="lastname">Jr</span>
+      </div>
+    )
+  }
+
+  const menu = () => {
+    return (
+      <div className="menu">
+        <ul>
+          {itens.map((item, index) => (
+            <li key={index} className={item.className || ""}>
+              {item.component ? item.component() : item.title}
+            </li>
+          ))}
+        </ul>
+      </div>
+    )
+  }
+
   return (
     <div className="Header">
       <div className={className}>
         <Container>
           <div className="header_body">
-            <div className="logo">
-              <span className="fistname">Wilton</span>
-              <strong>.</strong>
-              <span className="lastname">Jr</span>
-            </div>
-            <div className="menu">
-              <ul>
-                {itens.map((item, index) => (
-                  <li key={index} className={item.className || ""}>
-                    {item.component ? item.component() : item.title}
-                  </li>
-                ))}
-              </ul>
-            </div>
+            {logo()}
+            {menu()}
+          </div>
+          <div className="header_body_mobile">
+            {logo()}
+            {menu()}
           </div>
         </Container>
       </div>
