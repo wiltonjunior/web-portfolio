@@ -1,3 +1,5 @@
+@import "src/assets/sass/variables.scss";
+
 .About {
   min-height: 100vh;
   background-color: #0c0d25;
@@ -85,6 +87,17 @@
             box-shadow: 0 0.6rem 2.5rem rgba(99, 99, 99, 0.175);
           }
         }
+      }
+    }
+  }
+}
+
+@media #{$max-media-desktop-small} {
+  .About {
+    .about_main {
+      flex-direction: column-reverse;
+      .column {
+        flex: 1;
       }
     }
   }

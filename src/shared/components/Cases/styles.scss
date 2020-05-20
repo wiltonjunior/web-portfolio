@@ -115,7 +115,7 @@
           left: 50%;
           width: 10px;
           height: 10px;
-          opacity: .5;
+          opacity: 0.5;
           position: absolute;
           border-radius: 50%;
           border: solid 1px #fff;
@@ -127,6 +127,27 @@
             opacity: 1;
           }
         }
+      }
+    }
+  }
+}
+
+@media #{$max-media-desktop-small} {
+  .Cases {
+    .carousel-wrapper {
+      .carousel {
+        .CardCase {
+          padding: 0;
+          margin-bottom: 4rem;
+        }
+      }
+      .controls {
+        bottom: 0;
+        top: auto;
+        right: 0%;
+        display: flex;
+        position: absolute;
+        transform: translate(-50%, 0%);
       }
     }
   }

@@ -1,3 +1,5 @@
+@import "src/assets/sass/variables.scss";
+
 @-webkit-keyframes rotating /* Safari and Chrome */ {
   from {
     -webkit-transform: rotate(0deg);
@@ -102,6 +104,52 @@
             -ms-animation: rotating 10s linear infinite;
             -o-animation: rotating 10s linear infinite;
             animation: rotating 10s linear infinite;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media #{$max-media-desktop-small} {
+  .Banner {
+    .banner_main {
+      margin-top: 0px;
+      flex-direction: column-reverse;
+      .column {
+        flex: 1;
+        width: 100%;
+        &:first-child {
+          padding: 0;
+          .title {
+            h1 {
+              font-size: 25px;
+            }
+            p {
+              margin: auto;
+              font-size: 20px;
+            }
+            margin-bottom: 1rem;
+          }
+          .description {
+            p {
+              font-size: 18px;
+            }
+          }
+          .actions {
+            flex-direction: column;
+            .Button {
+              margin-bottom: 2rem;
+            }
+          }
+        }
+        &:last-child {
+          display: none;
+          svg {
+            margin: auto;
+            width: 350px;
+            height: 350px;
+            display: block;
           }
         }
       }

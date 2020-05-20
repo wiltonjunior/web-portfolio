@@ -47,3 +47,15 @@
     justify-content: center;
   }
 }
+
+
+@media #{$max-media-desktop-small} {
+  .CardCase {
+    .card_body {
+      flex-direction: column-reverse;
+      .column {
+        flex: 1;
+      }
+    }
+  }
+}

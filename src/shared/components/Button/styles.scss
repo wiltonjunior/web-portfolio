@@ -1,3 +1,5 @@
+@import "src/assets/sass/variables.scss";
+
 .Button {
   z-index: 2;
   border: none;
@@ -37,5 +39,11 @@
       width: calc(100% - 4px);
       height: calc(100% - 4px);
     }
+  }
+}
+
+@media #{$max-media-desktop-small} {
+  .Button {
+    width: 100%;
   }
 }

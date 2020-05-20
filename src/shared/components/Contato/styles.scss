@@ -164,3 +164,14 @@
     }
   }
 }
+
+@media #{$max-media-desktop-small} {
+  .Contato {
+    .contato_main {
+      flex-direction: column;
+      .column {
+        flex: 1;
+      }
+    }
+  }
+}

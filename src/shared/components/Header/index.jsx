@@ -61,8 +61,11 @@ const Header = () => {
             {menu()}
           </div>
           <div className="header_body_mobile">
-            {logo()}
-            {menu()}
+            <div className="navbar">
+              {logo()}
+              <span className="hamburger-box" />
+            </div>
+            {/* {menu()} */}
           </div>
         </Container>
       </div>

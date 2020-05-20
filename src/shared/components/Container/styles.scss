@@ -9,3 +9,11 @@
     margin: 0 5rem;
   }
 }
+
+
+
+@media #{$max-media-desktop-small} {
+  .Container {
+    margin: 0 1rem;
+  }
+}
