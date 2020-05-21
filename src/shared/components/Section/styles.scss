@@ -110,3 +110,23 @@
     }
   }
 }
+
+@media #{$max-media-desktop-small} {
+  .Section {
+    padding: 2rem 0;
+    position: relative;
+    .section-head {
+      text-align: center;
+      .title {
+        font-size: 1.8rem;
+        &::after {
+          font-size: 4rem;
+        }
+      }
+      .description {
+        margin-top: 3rem;
+        color: #97afd5;
+      }
+    }
+  }
+}

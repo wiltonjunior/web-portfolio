@@ -171,6 +171,17 @@
       flex-direction: column;
       .column {
         flex: 1;
+        &:first-child {
+          .contact {
+            padding: 0;
+            .block-contact {
+              .circle-animation {
+                height: 300px;
+                width: 300px;
+              }
+            }
+          }
+        }
       }
     }
   }

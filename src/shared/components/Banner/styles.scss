@@ -114,6 +114,7 @@
 @media #{$max-media-desktop-small} {
   .Banner {
     .banner_main {
+      padding: 15px;
       margin-top: 0px;
       flex-direction: column-reverse;
       .column {
@@ -122,18 +123,22 @@
         &:first-child {
           padding: 0;
           .title {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
             h1 {
-              font-size: 25px;
+              font-size: 2rem;
             }
             p {
               margin: auto;
-              font-size: 20px;
+              font-size: 14px;
             }
             margin-bottom: 1rem;
           }
           .description {
             p {
-              font-size: 18px;
+              font-size: 16px;
             }
           }
           .actions {
