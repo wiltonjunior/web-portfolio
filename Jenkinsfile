@@ -10,10 +10,10 @@ pipeline {
   parameters {
     string(name: 'BRANCH', defaultValue: 'master', description: 'Build branch.')
     string(name: 'GIT_CREDENTIALS', defaultValue: "610a2666-682b-4e7f-91e9-b5630ff7bed2", description: 'Git Credentials')
-    string(name: 'USER_VIRTUAL_MACHINE', defaultValue: "2aeccf92-a704-42ec-a927-de035574927e", description: 'User Credentials')
   }
 
   environment {
+    APPLICATION_NAME="portfolio"
     GIT_URL="git@github.com:wiltonjunior/portfolio.git"
     DOCKER_IMAGE="${env.APPLICATION_NAME}:${env.BUILD_NUMBER}" 
   }
@@ -37,24 +37,20 @@ pipeline {
     stage('Build image web') {
       steps {
           sh """
-              cp ./config/prd.env .env
+              cp ./config/prd.env prd.env
+              docker rm ${env.APPLICATION_NAME}* -f
+              docker rmi ${env.APPLICATION_NAME}*
               docker build -t ${env.DOCKER_IMAGE} .
             """
       }
     }
 
-    // stage('Start job') {
-    //   steps {
-    //   sshagent(["${params.MACHINE_CREDENTIALS}"]) {
-    //     sh """
-    //         ssh -o StrictHostKeyChecking=no ${params.USER_VIRTUAL_MACHINE} '
-    //         docker rm -f \$(docker ps -a -q) || echo 'empty' &&
-    //         docker rmi -f \$(docker images -q) || echo 'empty' &&
-    //         docker run -d --restart always --env-file ./prd.env --name web -p 80:80 ${env.ECR_IMAGE}
-    //         '
-    //       """
-    //     }
-    //   }
-    // }
+    stage('Start job') {
+      steps {
+            sh """
+              docker run -d --restart always --env-file ./prd.env --name ${env.APPLICATION_NAME} -p 80:80 ${env.ECR_IMAGE}
+            """
+      }
+    }
   }
 }
