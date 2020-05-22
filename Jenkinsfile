@@ -9,8 +9,8 @@ pipeline {
 
   parameters {
     string(name: 'BRANCH', defaultValue: 'master', description: 'Build branch.')
-    string(name: 'GIT_CREDENTIALS', defaultValue: "610a2666-682b-4e7f-91e9-b5630ff7bed2" description: 'Git Credentials')
-    string(name: 'USER_VIRTUAL_MACHINE', defaultValue: "2aeccf92-a704-42ec-a927-de035574927e" description: 'User Credentials')
+    string(name: 'GIT_CREDENTIALS', defaultValue: "610a2666-682b-4e7f-91e9-b5630ff7bed2", description: 'Git Credentials')
+    string(name: 'USER_VIRTUAL_MACHINE', defaultValue: "2aeccf92-a704-42ec-a927-de035574927e", description: 'User Credentials')
   }
 
   environment {
@@ -27,7 +27,7 @@ pipeline {
           extensions: [],
           submoduleCfg: [],
           userRemoteConfigs: [[
-            credentialsId: "${params.GIT_CREDENTIALS}",
+            credentialsId: "610a2666-682b-4e7f-91e9-b5630ff7bed2",
             url: "${GIT_URL}"
           ]]
         ])
