@@ -10,7 +10,8 @@ pipeline {
   parameters {
     string(name: 'BRANCH', defaultValue: 'master', description: 'Build branch.')
     string(name: 'GIT_CREDENTIALS', description: 'Git Credentials')
-    string(name: 'USER_VIRTUAL_MACHINE', description: 'USER credentials')
+    string(name: 'MACHINE_CREDENTIALS', description: 'Machine Credentials')
+    string(name: 'USER_VIRTUAL_MACHINE', description: 'User Credentials')
   }
 
   environment {
@@ -45,7 +46,7 @@ pipeline {
 
     // stage('Start job') {
     //   steps {
-    //   sshagent(["${env.EC2_CREDENTIALS}"]) {
+    //   sshagent(["${params.MACHINE_CREDENTIALS}"]) {
     //     sh """
     //         ssh -o StrictHostKeyChecking=no ${params.USER_VIRTUAL_MACHINE} '
     //         docker rm -f \$(docker ps -a -q) || echo 'empty' &&
