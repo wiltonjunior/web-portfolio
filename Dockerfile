@@ -1,22 +1,17 @@
-FROM node:12
+# base image
+FROM node:12-slim as builder
 
-ENV PORT 3000
 
-# Create app directory
-RUN mkdir -p /usr/src/app
-WORKDIR /usr/src/app
+USER root
+# set working directory
+WORKDIR /app
 
-# Installing dependencies
-COPY package.json /usr/src/app/
-RUN yarn
+# install and cache app dependencies
+COPY . .
+RUN yarn && yarn build
 
-# Copying source files
-COPY . /usr/src/app
+FROM nginx:1.17-alpine
 
-# Building app
-RUN yarn build
+RUN rm -f /usr/share/nginx/html/index.html
 
-EXPOSE 3000
-
-# Running the app
-CMD "npm" "start"
+COPY --from=builder /app/public/ /usr/share/nginx/html/
