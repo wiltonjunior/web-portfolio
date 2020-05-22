@@ -48,7 +48,7 @@ pipeline {
     stage('Start job') {
       steps {
             sh """
-              docker run -d --restart always --env-file ./prd.env --name ${env.APPLICATION_NAME} -p 80:80 ${env.ECR_IMAGE}
+              docker run -d --restart always --env-file ./prd.env --name ${env.APPLICATION_NAME} -p 443:80 ${env.ECR_IMAGE}
             """
       }
     }
