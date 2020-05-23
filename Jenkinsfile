@@ -38,8 +38,8 @@ pipeline {
       steps {
           sh """
               cp ./config/prd.env prd.env
-              docker rm -f $(docker ps --filter=name='${env.APPLICATION_NAME}*:*' -q )
-              docker rmi -f $(docker images --filter=reference='${env.APPLICATION_NAME}*:*' -q ) 
+              docker rm -f $(docker ps --filter=name='${env.APPLICATION_NAME}*:*' -q ) || echo 'empty' 
+              docker rmi -f $(docker images --filter=reference='${env.APPLICATION_NAME}*:*' -q ) || echo 'empty'
               docker build -t ${env.DOCKER_IMAGE} .
             """
       }
