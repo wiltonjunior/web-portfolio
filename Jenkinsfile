@@ -38,8 +38,8 @@ pipeline {
       steps {
           sh """
               cp ./config/prd.env prd.env
-              docker rm ${env.APPLICATION_NAME}* -f || echo 'empty'
-              docker rmi ${env.APPLICATION_NAME}* || echo 'empty'
+              docker rm -f $(docker ps --filter=name='${env.APPLICATION_NAME}*:*' -q )
+              docker rmi -f $(docker images --filter=reference='${env.APPLICATION_NAME}*:*' -q ) 
               docker build -t ${env.DOCKER_IMAGE} .
             """
       }
@@ -48,7 +48,7 @@ pipeline {
     stage('Start job') {
       steps {
             sh """
-              docker run -d --restart always --env-file ./prd.env --name ${env.APPLICATION_NAME} -p 443:80 ${env.DOCKER_IMAGE}
+              docker run -d --restart always --env-file ./prd.env --name ${env.APPLICATION_NAME} -p 80:80 ${env.DOCKER_IMAGE}
             """
       }
     }
