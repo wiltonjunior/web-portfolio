@@ -31,7 +31,7 @@ const CardCase = ({ item, active }) => {
         </div>
       </div>
       <div className="card_footer">
-        <Button basic>Acessar o Case</Button>
+        <Button basic href={item.link}>Acessar o Case</Button>
       </div>
     </div>
   )
