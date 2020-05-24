@@ -26,9 +26,14 @@
       &:first-child {
         .card_image {
           margin: 20px;
-          height: 400px;
+          height: 450px;
+          display: flex;
           border: solid 1px #000;
           background-color: #0c0d25;
+          img{
+            height: 100%;
+            margin: auto;
+          }
         }
       }
       &:last-child {

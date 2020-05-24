@@ -10,7 +10,9 @@ const CardCase = ({ item, active }) => {
     <div className={`CardCase ${active ? "active" : ""}`}>
       <div className="card_body">
         <div className="column">
-          <div className="card_image"></div>
+          <div className="card_image">
+            <img src={item.image} />
+          </div>
         </div>
         <div className="column">
           <div className="card_description">
