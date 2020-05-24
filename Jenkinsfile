@@ -9,6 +9,7 @@ pipeline {
 
   parameters {
     string(name: 'BRANCH', defaultValue: 'master', description: 'Build branch.')
+    string(name: 'HOST', defaultValue: 'wiltonjunior.dev', description: 'Build branch.')
     string(name: 'GIT_CREDENTIALS', defaultValue: "610a2666-682b-4e7f-91e9-b5630ff7bed2", description: 'Git Credentials')
   }
 
@@ -48,7 +49,7 @@ pipeline {
     stage('Start job') {
       steps {
             sh """
-              docker run -d --restart always --env-file ./prd.env --name ${env.APPLICATION_NAME} -p 80:80 ${env.DOCKER_IMAGE}
+              docker run -d --restart always --name ${env.APPLICATION_NAME} -p 8081:80 ${env.DOCKER_IMAGE}
             """
       }
     }
