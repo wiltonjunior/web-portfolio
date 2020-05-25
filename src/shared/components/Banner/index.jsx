@@ -105,7 +105,7 @@ const Banner = () => {
                 <strong>Cientista da computação</strong>, atuando desde de
                 <strong> 2016</strong> em desenvolvimento de software,
                 especialmente no desenvolvimento web. Com aplicabilidade na
-                construção de aplicações hibridas, resposivas e cross brower.
+                construção de aplicações hibridas, resposivas e cross browser.
               </p>
             </div>
             <div className="actions">
