@@ -7,7 +7,7 @@ import "./styles.scss"
 
 const Contato = () => {
   return (
-    <div className="Contato">
+    <div id='contact' className="Contato">
       <Container>
         <div className="contato_main">
           <div className="column">

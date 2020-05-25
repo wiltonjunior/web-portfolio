@@ -42,7 +42,7 @@ const Case = () => {
   }
 
   return (
-    <div className="Cases">
+    <div id='cases' className="Cases">
       <Container>
         <Section item={item} />
         <div className="carousel-wrapper">

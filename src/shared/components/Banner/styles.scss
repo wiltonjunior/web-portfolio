@@ -33,7 +33,7 @@
 .Banner {
   min-height: 100vh;
   position: relative;
-  background-color: #08091b;
+  background-color: $primary-black;
   &::before,
   &::after {
     width: 100%;
@@ -65,8 +65,7 @@
       &:first-child {
         padding-right: 4rem;
         .title {
-          display: flex;
-          align-items: flex-end;
+          text-align: center;
           h1 {
             margin: 0;
             color: #fff;
@@ -75,8 +74,7 @@
           p {
             margin: 0;
             color: #fff;
-            font-size: 35px;
-            margin-left: 10px;
+            font-size: 20px;
             font-style: italic;
           }
           margin-bottom: 2rem;
@@ -85,12 +83,13 @@
           p {
             color: #d4d4d4;
             font-size: 18px;
-            text-align: justify;
           }
         }
         .actions {
+          z-index: 100;
           display: flex;
           margin-top: 40px;
+          position: relative;
           justify-content: space-evenly;
         }
       }
@@ -104,6 +103,38 @@
             -ms-animation: rotating 10s linear infinite;
             -o-animation: rotating 10s linear infinite;
             animation: rotating 10s linear infinite;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media #{$max-media-desktop-medium} {
+  .Banner {
+    .banner_main {
+      .column {
+        &:first-child {
+          padding-right: 4rem;
+          .title {
+            h1 {
+              font-size: 35px;
+            }
+            p {
+              font-size: 18px;
+            }
+            margin-bottom: 2rem;
+          }
+          .actions {
+            display: flex;
+            margin-top: 40px;
+            justify-content: space-evenly;
+          }
+        }
+        &:last-child {
+          svg {
+            width: 450px;
+            height: 450px;
           }
         }
       }

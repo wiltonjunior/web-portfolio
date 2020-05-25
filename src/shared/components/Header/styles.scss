@@ -1,5 +1,18 @@
 @import "src/assets/sass/variables.scss";
 
+@mixin active_item_menu {
+  color: #3785f4;
+  &::before {
+    content: "";
+    left: 0;
+    width: 100%;
+    height: 4px;
+    bottom: 0px;
+    position: absolute;
+    background-color: #3785f4;
+  }
+}
+
 .Header {
   height: 10rem;
   .header-fixed {
@@ -61,6 +74,8 @@
     transition: all 0.4s;
     justify-content: space-between;
     .menu {
+      z-index: 100;
+      display: flex;
       ul {
         display: flex;
         li {
@@ -69,19 +84,20 @@
           font-size: 1.5rem;
           list-style: none;
           display: flex;
+          cursor: pointer;
           align-items: center;
           justify-content: center;
           position: relative;
           &.active {
-            color: #3785f4;
+            @include active_item_menu()
+          }
+          &:hover{
+            @include active_item_menu()
+          }
+          &:last-child{
+            color: #fff;
             &::before {
-              content: "";
-              left: 0;
-              width: 100%;
-              height: 4px;
-              bottom: 0px;
-              position: absolute;
-              background-color: #3785f4;
+              display: none;
             }
           }
         }
@@ -97,6 +113,46 @@
     display: none;
   }
 }
+
+@media #{$max-media-desktop-medium} {  
+  .Header {
+    height: 10rem;
+    .header-fixed {
+      .header_body {
+        height: 4.5rem;
+        .logo {
+          font-size: 25px;
+        }
+        .menu {
+          ul {
+            display: flex;
+            li {
+              margin: 2rem;
+              font-size: 1rem;
+            }
+          }
+        }
+      }
+    }
+  
+    .logo {
+      font-size: 30px;
+    }
+
+    .header_body {
+      .menu {
+        ul {
+          display: flex;
+          li {
+            margin: 2rem;
+            font-size: 1.2rem;
+          }
+        }
+      }
+    }
+  }
+}
+
 
 @media #{$max-media-desktop-small} {
   .Header {

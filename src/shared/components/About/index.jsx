@@ -3,7 +3,7 @@ import React from "react"
 import Section from "@components/Section"
 import Container from "@components/Container"
 
-import user from "@images/user.jpeg"
+import user from "@images/user.jpg"
 
 import "./styles.scss"
 
@@ -11,10 +11,10 @@ const About = () => {
   const item = {
     title: "Sobre mim",
     shadow: "Sobre",
-    description: "Conheça um pouco da minha historia."
+    description: "Conheça um pouco da minha historia.",
   }
   return (
-    <div className="About">
+    <div id="about" className="About">
       <Container>
         <Section item={item} />
         <div className="about_main">
@@ -23,25 +23,15 @@ const About = () => {
               <div className="article">
                 <h2>Academia</h2>
                 <p>
-                  Graduado em Ciência da computação pela Univesidade Estado do Rio Grandede do Norte - UERN.
-                </p>
-              </div>
-              <div className="article">
-                <h2>Carreira</h2>
-                <p>
-                  So I said knees up Jeffrey grub me old mucker Oxford spend a
-                  penny, pukka codswallop fantastic lost the plot Queen's
-                  English. Daft he legged it mufty chancer porkies burke blatant
-                  pardon me lavatory.
+                  Graduado em Ciência da computação pela Univesidade Estado do
+                  Rio Grandede do Norte - UERN.
                 </p>
               </div>
               <div className="article">
                 <h2>Experiencia</h2>
                 <p>
-                  So I said knees up Jeffrey grub me old mucker Oxford spend a
-                  penny, pukka codswallop fantastic lost the plot Queen's
-                  English. Daft he legged it mufty chancer porkies burke blatant
-                  pardon me lavatory.
+                  Atuo desde de 2016 com desenvolvimento front end, back end e
+                  mobile. Especialmente com a stack de java script, como Reactjs, Angular.io, Vuejs e Nodejs.
                 </p>
               </div>
             </div>

@@ -9,7 +9,7 @@ import Image from "@svg/inline/banner.inline.svg"
 
 import "./styles.scss"
 
-const Banner = () => { 
+const Banner = () => {
   const params = {
     particles: {
       number: { value: 30, density: { enable: true, value_area: 1000 } },
@@ -76,8 +76,19 @@ const Banner = () => {
     },
     retina_detect: true,
   }
+
+  const goTo = id => {
+    const element = document.getElementById(id)
+    setTimeout(() => {
+      window.scrollTo({
+        behavior: element ? "smooth" : "auto",
+        top: element ? element.offsetTop : 0,
+      })
+    }, 100)
+  }
+
   return (
-    <div className="Banner">
+    <div id="home" className="Banner">
       <Particles canvasClassName="particles" params={params} />
       <div className="banner_header">
         <Header />
@@ -86,26 +97,22 @@ const Banner = () => {
         <div className="banner_main">
           <div className="column">
             <div className="title">
-              <h1>Wilton Junior,</h1>
+              <h1>Wilton Junior</h1>
               <p>Full Stack Developer</p>
             </div>
             <div className="description">
               <p>
-                Programador full-stack, apaixonado pelo desenvolvedor de
-                software, com sólida formação acadêmica. Capacidade de trabalhar
-                em equipe e solucionar problemas de forma rápida.
-              </p>
-              <p>
-                Habilidade de manter e aprimorar o softwares com o objetivo de
-                melhorar a funcionalidade operacional de acordo com os
-                requisitos de negócios. Possuo conhecimento em linguagens de
-                programação de software, como , JavaScript, Java e as principais
-                frameworks front-end como, React, Angular e Vuejs.
+                <strong>Cientista da computação</strong>, atuando desde de
+                <strong> 2016</strong> em desenvolvimento de software,
+                especialmente no desenvolvimento web. Com aplicabilidade na
+                construção de aplicações hibridas, resposivas e cross brower.
               </p>
             </div>
             <div className="actions">
-              <Button>Portfolio</Button>
-              <Button basic>Contato</Button>
+              <Button onClick={() => goTo("cases")}>Portfolio</Button>
+              <Button basic onClick={() => goTo("contact")}>
+                Contato
+              </Button>
             </div>
           </div>
           <div className="column">

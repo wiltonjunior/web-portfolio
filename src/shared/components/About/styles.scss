@@ -55,6 +55,7 @@
         .image_user {
           position: relative;
           margin: 0 5rem;
+          margin-bottom: 4rem;
           img {
             z-index: 10;
             width: 100%;
@@ -62,17 +63,17 @@
             border-radius: 20px;
             position: relative;
           }
-          &::before {
-            left: 0;
-            top: 0px;
-            content: "";
-            height: 99%;
-            width: 100%;
-            z-index: 100;
-            position: absolute;
-            border-radius: 20px;
-            background: rgba(43, 88, 245, 0.1);
-          }
+          // &::before {
+          //   left: 0;
+          //   top: 0px;
+          //   content: "";
+          //   height: 99%;
+          //   width: 100%;
+          //   z-index: 100;
+          //   position: absolute;
+          //   border-radius: 20px;
+          //   background: rgba(43, 88, 245, 0.1);
+          // }
 
           &::after {
             content: " ";

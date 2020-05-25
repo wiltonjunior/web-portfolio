@@ -1,9 +1,7 @@
-@import 'src/assets/sass/variables.scss';
-
+@import "src/assets/sass/variables.scss";
 .Footer {
   padding: 20px;
   color: $text;
   text-align: end;
-  background-color: #08091b;
-  background-color: #08091b;
+  background-color: $primary-black;
 }

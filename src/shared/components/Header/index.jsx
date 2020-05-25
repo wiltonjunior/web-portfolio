@@ -6,6 +6,7 @@ import Container from "@components/Container"
 import "./styles.scss"
 
 const Header = () => {
+  const [active, setActive] = useState(0)
   const [className, setClassName] = useState("")
 
   useEffect(() => {
@@ -20,11 +21,24 @@ const Header = () => {
     }
   }
 
+  const goTo = (item, index) => {
+    if (item.id) {
+      const element = document.getElementById(item.id)
+      setTimeout(() => {
+        window.scrollTo({
+          behavior: element ? "smooth" : "auto",
+          top: element ? element.offsetTop : 0,
+        })
+      }, 100)
+    }
+    setActive(index)
+  }
+
   const itens = [
-    { title: "Home", className: "active" },
-    { title: "Sobre" },
-    { title: "Cases" },
-    { title: "Contato" },
+    { title: "Home", id: "home" },
+    { title: "Sobre", id: "about" },
+    { title: "Cases", id: "cases" },
+    { title: "Contato", id: "contact" },
     { component: () => <Button basic>Acessar CV</Button> },
   ]
 
@@ -43,7 +57,11 @@ const Header = () => {
       <div className="menu">
         <ul>
           {itens.map((item, index) => (
-            <li key={index} className={item.className || ""}>
+            <li
+              key={index}
+              onClick={() => goTo(item, index)}
+              className={index === active ? "active" : null}
+            >
               {item.component ? item.component() : item.title}
             </li>
           ))}
