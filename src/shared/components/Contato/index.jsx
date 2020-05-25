@@ -56,7 +56,7 @@ const Contato = () => {
                         type="text"
                         name="contact-name"
                         className="contact-input"
-                        placeholder="Introduce yourself"
+                        placeholder="Name"
                       />
                     </div>
                   </div>
@@ -69,7 +69,7 @@ const Contato = () => {
                         type="email"
                         name="contact-email"
                         className="contact-input"
-                        placeholder="Who do we replay to"
+                        placeholder="Email"
                       />
                     </div>
                   </div>
@@ -81,7 +81,7 @@ const Contato = () => {
                   <textarea
                     name="contact-message"
                     className="contact-input"
-                    placeholder="Leave your question or comment here"
+                    placeholder="Messagem"
                   />
                 </div>
               </div>
