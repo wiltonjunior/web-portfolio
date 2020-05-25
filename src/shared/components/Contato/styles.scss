@@ -64,7 +64,7 @@
           padding: 10px 15px;
           line-height: 21px;
           font-size: 0.9em;
-          color: #305082;
+          color: #dbe4f7;
           border-radius: 6px;
           transition: all 0.4s;
           border: 1px solid #dbe4f7;
@@ -79,6 +79,7 @@
           height: 100px;
           resize: none;
           outline: none;
+          color: #dbe4f7;
         }
       }
 
@@ -139,6 +140,8 @@
       &:last-child {
         padding: 10px;
         .form {
+          z-index: 100;
+          position: relative;
           .row {
             width: 100%;
             display: flex;
