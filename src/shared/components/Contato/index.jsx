@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useState } from "react"
 
 import Button from "@components/Button"
 import Container from "@components/Container"
@@ -6,35 +6,42 @@ import Container from "@components/Container"
 import "./styles.scss"
 
 const Contato = () => {
+  const [object, setObject] = useState({})
+
+  const onChange = ({ target: { value, name } }) => {
+    object[name] = value
+    setObject({...object})
+  }
+
   return (
-    <div id='contact' className="Contato">
+    <div id="contact" className="Contato">
       <Container>
         <div className="contato_main">
           <div className="column">
             <div className="contact">
-            <div className="block-contact">
-              <ul className="contact-list">
-                <li>
-                  <em className="contact-icon fa-phone"></em>
-                  <div className="contact-text">
-                    <span>+55 84 9968-6176</span>
-                  </div>
-                </li>
-                <li>
-                  <em className="contact-icon fas fa-envelope"></em>
-                  <div className="contact-text">
-                    <span>contato@wiltonjunior.me</span>
-                  </div>
-                </li>
-                <li>
-                  <em className="contact-icon fas fa-paper-plane"></em>
-                  <div className="contact-text">
-                    <span>Whatsapp</span>
-                  </div>
-                </li>
-              </ul>
-              <div className="circle-animation"></div>
-            </div>
+              <div className="block-contact">
+                <ul className="contact-list">
+                  <li>
+                    <em className="contact-icon fa-phone"></em>
+                    <div className="contact-text">
+                      <span>+55 84 9968-6176</span>
+                    </div>
+                  </li>
+                  <li>
+                    <em className="contact-icon fas fa-envelope"></em>
+                    <div className="contact-text">
+                      <span>contato@wiltonjunior.me</span>
+                    </div>
+                  </li>
+                  <li>
+                    <em className="contact-icon fas fa-paper-plane"></em>
+                    <div className="contact-text">
+                      <span>Whatsapp</span>
+                    </div>
+                  </li>
+                </ul>
+                <div className="circle-animation"></div>
+              </div>
             </div>
           </div>
 
@@ -57,6 +64,8 @@ const Contato = () => {
                         name="contact-name"
                         className="contact-input"
                         placeholder="Name"
+                        value={object.Name}
+                        onChange={onChange}
                       />
                     </div>
                   </div>
@@ -70,6 +79,8 @@ const Contato = () => {
                         name="contact-email"
                         className="contact-input"
                         placeholder="Email"
+                        value={object.Email}
+                        onChange={onChange}
                       />
                     </div>
                   </div>
@@ -82,6 +93,8 @@ const Contato = () => {
                     name="contact-message"
                     className="contact-input"
                     placeholder="Messagem"
+                    value={object.Message}
+                    onChange={onChange}
                   />
                 </div>
               </div>
