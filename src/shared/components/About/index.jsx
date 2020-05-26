@@ -2,6 +2,7 @@ import React from "react"
 
 import Section from "@components/Section"
 import Container from "@components/Container"
+import Translate from "@components/Translate"
 
 import user from "@images/user.jpg"
 
@@ -9,10 +10,22 @@ import "./styles.scss"
 
 const About = () => {
   const item = {
-    title: "Sobre mim",
     shadow: "Sobre",
+    title: "Sobre mim",
     description: "Conheça um pouco da minha historia.",
   }
+
+  const articles = [
+    {
+      title: "ABOUT_CARD_TITLE_ONE",
+      description: "ABOUT_CARD_DESCRIPTION_ONE",
+    },
+    {
+      title: "ABOUT_CARD_TITLE_TWO",
+      description: "ABOUT_CARD_DESCRIPTION_TWO",
+    },
+  ]
+
   return (
     <div id="about" className="About">
       <Container>
@@ -20,20 +33,16 @@ const About = () => {
         <div className="about_main">
           <div className="column">
             <div className="header">
-              <div className="article">
-                <h2>Academia</h2>
-                <p>
-                  Graduado em Ciência da computação pela Universidade Estado do
-                  Rio Grande do Norte - UERN.
-                </p>
-              </div>
-              <div className="article">
-                <h2>Experiencia</h2>
-                <p>
-                  Atuo desde 2016 com desenvolvimento front end, back end e
-                  mobile. Especialmente com a stack de java script, como Reactjs, Angular.io, Vuejs e Nodejs.
-                </p>
-              </div>
+              {articles.map((item, index) => (
+                <div key={index} className="article">
+                  <h2>
+                    <Translate>{item.title}</Translate>
+                  </h2>
+                  <p>
+                    <Translate>{item.description}</Translate>
+                  </p>
+                </div>
+              ))}
             </div>
           </div>
           <div className="column">
