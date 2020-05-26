@@ -7,7 +7,7 @@ const replaceOthers = (instance, key, dict, others = {}) => {
   let value = key
   let tmp
   if (value) {
-    const valueSplit = value.split('{')
+    const valueSplit = String(value).split('{')
     for (let item in valueSplit) {
       tmp = valueSplit[item].substr(0, valueSplit[item].indexOf('}'))
       if (tmp) {
