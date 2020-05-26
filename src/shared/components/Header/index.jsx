@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react"
 
 import Button from "@components/Button"
 import Container from "@components/Container"
+import Translate from "@components/Translate"
 
 import "./styles.scss"
 
@@ -35,11 +36,11 @@ const Header = () => {
   }
 
   const itens = [
-    { title: "Home", id: "home" },
-    { title: "Sobre", id: "about" },
-    { title: "Cases", id: "cases" },
-    { title: "Contato", id: "contact" },
-    { component: () => <Button basic>Acessar CV</Button> },
+    { title: "HEADER_ITEM_TITLE_HOME", id: "home" },
+    { title: "HEADER_ITEM_TITLE_ABOUT", id: "about" },
+    { title: "HEADER_ITEM_TITLE_CASES", id: "cases" },
+    { title: "HEADER_ITEM_TITLE_CONTACT", id: "contact" },
+    { component: () => <Button basic>HEADER_ITEM_TITLE_CV</Button> },
   ]
 
   const logo = () => {
@@ -62,7 +63,7 @@ const Header = () => {
               onClick={() => goTo(item, index)}
               className={index === active ? "active" : null}
             >
-              {item.component ? item.component() : item.title}
+              {item.component ? item.component() : <Translate>{item.title}</Translate> }
             </li>
           ))}
         </ul>
