@@ -23,14 +23,14 @@ const About = () => {
               <div className="article">
                 <h2>Academia</h2>
                 <p>
-                  Graduado em Ciência da computação pela Univesidade Estado do
-                  Rio Grandede do Norte - UERN.
+                  Graduado em Ciência da computação pela Universidade Estado do
+                  Rio Grande do Norte - UERN.
                 </p>
               </div>
               <div className="article">
                 <h2>Experiencia</h2>
                 <p>
-                  Atuo desde de 2016 com desenvolvimento front end, back end e
+                  Atuo desde 2016 com desenvolvimento front end, back end e
                   mobile. Especialmente com a stack de java script, como Reactjs, Angular.io, Vuejs e Nodejs.
                 </p>
               </div>
