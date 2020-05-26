@@ -12,4 +12,11 @@ export default {
   de software, especialmente no desenvolvimento web. Com aplicabilidade na construção de aplicações hibridas, resposivas e cross browser.`,
   BANNER_BUTTON_PORTFOLIO: "Portfolio",
   BANNER_BUTTON_CONTACT: "Contato",
+
+  ABOUT_CARD_TITLE_ONE: "Academia",
+  ABOUT_CARD_DESCRIPTION_ONE:
+    "Graduado em Ciência da computação pela Universidade Estado do Rio Grande do Norte - UERN.",
+  ABOUT_CARD_TITLE_TWO: "Experiencia",
+  ABOUT_CARD_DESCRIPTION_TWO:
+    "Atuo desde 2016 com desenvolvimento front end, back end e mobile. Especialmente com a stack de java script, como Reactjs, Angular.io, Vuejs e Nodejs.",
 }
