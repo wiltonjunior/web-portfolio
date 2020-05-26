@@ -10,9 +10,9 @@ import "./styles.scss"
 
 const About = () => {
   const item = {
-    shadow: "Sobre",
-    title: "Sobre mim",
-    description: "Conheça um pouco da minha historia.",
+    shadow: "ABOUT_SECTION_SHADOW",
+    title: "ABOUT_SECTION_TITLE",
+    description: "ABOUT_SECTION_DESCRIPTION",
   }
 
   const articles = [
