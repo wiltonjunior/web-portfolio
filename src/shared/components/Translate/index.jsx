@@ -1,7 +1,7 @@
 import { Component } from 'react'
 
-import i18N from 'app/i18N/'
-import configs from 'app/configs/'
+import i18N from '@i18n'
+import configs from '@configs'
 import Service from './Service'
 
 let dict
