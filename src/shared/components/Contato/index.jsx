@@ -53,7 +53,7 @@ const Contato = () => {
                 Entrarei em contato com você em breve.
               </p>
             </div>
-            <form className="form">
+            <div className="form">
               <div className="row">
                 <div className="col-6">
                   <div className="field-item">
@@ -103,7 +103,7 @@ const Contato = () => {
                   <Button>Enviar</Button>
                 </div>
               </div>
-            </form>
+            </div>
           </div>
         </div>
       </Container>
