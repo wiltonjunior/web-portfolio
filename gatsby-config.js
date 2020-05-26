@@ -39,6 +39,7 @@ module.exports = {
         "@svg": path.join(__dirname, "src/assets/images/svg"),
         "@images": path.join(__dirname, "src/assets/images/img"),
         "@components": path.join(__dirname, "src/shared/components"),
+        "@utils": path.join(__dirname, "src/shared/utils"),
       },
     },
     {
