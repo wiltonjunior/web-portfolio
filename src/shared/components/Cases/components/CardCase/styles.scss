@@ -31,7 +31,7 @@
           padding: 10px;
           border: solid 1px #000;
           background-color: #0c0d25;
-          img{
+          img {
             height: 100%;
             margin: auto;
           }
@@ -54,13 +54,30 @@
   }
 }
 
-
 @media #{$max-media-desktop-small} {
   .CardCase {
     .card_body {
       flex-direction: column-reverse;
       .column {
         flex: 1;
+        &:first-child {
+          position: relative;
+          .card_image {
+            margin: 0px;
+            height: 280px;
+            display: flex;
+            padding: 0 20px;
+            margin-bottom: 40px;
+          }
+        }
+        &:last-child {
+          .card_description {
+            padding: 10px;
+            .header {
+              text-align: center;
+            }
+          }
+        }
       }
     }
   }
