@@ -19,4 +19,8 @@ export default {
   ABOUT_CARD_TITLE_TWO: "Experiencia",
   ABOUT_CARD_DESCRIPTION_TWO:
     "Atuo desde 2016 com desenvolvimento front end, back end e mobile. Especialmente com a stack de java script, como Reactjs, Angular.io, Vuejs e Nodejs.",
+
+  ABOUT_SECTION_SHADOW: "Sobre",
+  ABOUT_SECTION_TITLE: "Sobre mim",
+  ABOUT_SECTION_DESCRIPTION: "Conheça um pouco da minha historia.",
 }

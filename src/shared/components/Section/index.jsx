@@ -1,5 +1,7 @@
 import React from "react"
 
+import Translate, {dict} from "@components/Translate"
+
 import "./styles.scss"
 
 const Section = props => {
@@ -19,10 +21,12 @@ const Section = props => {
             <span class="line-8"></span>
           </div>
         )}
-        <h2 class="title" title={item?.shadow}>
-          {item?.title}
+        <h2 class="title" title={dict.translate(item?.shadow)}>
+          <Translate>{item?.title}</Translate>
         </h2>
-        <p class="description">{item?.description}</p>
+        <p class="description">
+          <Translate>{item?.description}</Translate>
+        </p>
       </div>
     </div>
   )
