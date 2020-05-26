@@ -1,7 +1,7 @@
 import React from 'react'
-import i18N from 'app/i18N/'
+import i18N from '@i18n'
 import Utils from '@utils'
-import configs from 'app/configs'
+import configs from '@configs'
 
 const replaceOthers = (instance, key, dict, others = {}) => {
   let value = key
