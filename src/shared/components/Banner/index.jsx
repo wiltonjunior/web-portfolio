@@ -4,6 +4,7 @@ import Particles from "react-particles-js"
 import Header from "@components/Header"
 import Button from "@components/Button"
 import Container from "@components/Container"
+import Translate from "@components/Translate"
 
 import Image from "@svg/inline/banner.inline.svg"
 
@@ -97,21 +98,24 @@ const Banner = () => {
         <div className="banner_main">
           <div className="column">
             <div className="title">
-              <h1>Wilton Junior</h1>
-              <p>Full Stack Developer</p>
+              <h1>
+                <Translate>BANNER_TITLE</Translate>
+              </h1>
+              <p>
+                <Translate>BANNER_SUB_TITLE</Translate>
+              </p>
             </div>
             <div className="description">
               <p>
-                <strong>Cientista da computação</strong>, atuando desde de
-                <strong> 2016</strong> em desenvolvimento de software,
-                especialmente no desenvolvimento web. Com aplicabilidade na
-                construção de aplicações hibridas, resposivas e cross browser.
+                <Translate html>BANNER_SUB_PARAGRAPH_ONE</Translate>
               </p>
             </div>
             <div className="actions">
-              <Button onClick={() => goTo("cases")}>Portfolio</Button>
+              <Button onClick={() => goTo("cases")}>
+                BANNER_BUTTON_PORTFOLIO
+              </Button>
               <Button basic onClick={() => goTo("contact")}>
-                Contato
+                BANNER_BUTTON_CONTACT
               </Button>
             </div>
           </div>

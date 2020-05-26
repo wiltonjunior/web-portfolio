@@ -1,5 +1,7 @@
 import React from "react"
 
+import Translate from "@components/Translate"
+
 import "./styles.scss"
 
 const Button = props => {
@@ -11,13 +13,13 @@ const Button = props => {
         target="_black"
         className={`Button ${basic ? "basic" : ""}`}
       >
-        {props.children}
+        <Translate>{props.children}</Translate>
       </a>
     )
   } else {
     return (
       <button className={`Button ${basic ? "basic" : ""}`} onClick={onClick}>
-        {props.children}
+        <Translate>{props.children}</Translate>
       </button>
     )
   }
