@@ -23,4 +23,6 @@ export default {
   ABOUT_SECTION_SHADOW: "Sobre",
   ABOUT_SECTION_TITLE: "Sobre mim",
   ABOUT_SECTION_DESCRIPTION: "Conheça um pouco da minha historia.",
+
+  ACESS_CASE: "Acessar Case"
 }
