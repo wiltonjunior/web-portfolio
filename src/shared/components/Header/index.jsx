@@ -39,7 +39,6 @@ const Header = () => {
   }
 
   const verifyScroll = scroll => {
-    console.log(scrollWidth)
     for (let i = 0; i < scrollWidth.length; i++) {
       if (i + 1 >= scrollWidth.length) {
         if (scroll >= scrollWidth[i]) {
