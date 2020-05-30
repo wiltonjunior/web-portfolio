@@ -9,16 +9,45 @@ import "./styles.scss"
 const Header = () => {
   const [active, setActive] = useState(0)
   const [className, setClassName] = useState("")
+  const [scrollWidth, setScrollWidth] = useState([])
 
   useEffect(() => {
     window.onscroll = () => handleScroll()
   }, [])
 
+  const initScrollWidth = () => {
+    const values = []
+    const ids = ["home", "about", "cases", "contact"]
+    for (const item of ids) {
+      const value = getElementScroll(item)
+      values.push(value)
+    }
+    setScrollWidth([...values])
+  }
+
   const handleScroll = () => {
-    if (document.documentElement.scrollTop > 150) {
+    const scroll = document.documentElement.scrollTop
+    initScrollWidth()
+    setActive(verifyScroll(scroll) || 0)
+    if (scroll > 150) {
       setClassName("header-fixed")
     } else {
       setClassName("")
+    }
+  }
+
+  const getElementScroll = id => {
+    return document.getElementById(id).offsetTop
+  }
+
+  const verifyScroll = scroll => {
+    console.log(scrollWidth)
+    for (let i = 0; i < scrollWidth.length; i++) {
+      if (scroll >= scrollWidth[i] && scroll <= scrollWidth[i + 1]) {
+        return i
+      } else {
+        return scrollWidth.length - 1
+      }
     }
   }
 
@@ -63,7 +92,11 @@ const Header = () => {
               onClick={() => goTo(item, index)}
               className={index === active ? "active" : null}
             >
-              {item.component ? item.component() : <Translate>{item.title}</Translate> }
+              {item.component ? (
+                item.component()
+              ) : (
+                <Translate>{item.title}</Translate>
+              )}
             </li>
           ))}
         </ul>
