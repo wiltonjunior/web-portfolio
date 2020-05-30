@@ -8,7 +8,7 @@ export default {
 
   BANNER_TITLE: "Wilton Junior",
   BANNER_SUB_TITLE: "Full Stack Developer",
-  BANNER_SUB_PARAGRAPH_ONE: `<strong>Cientista da computação</strong>, atuando desde de strong> 2016</strong> em desenvolvimento 
+  BANNER_SUB_PARAGRAPH_ONE: `<strong>Cientista da computação</strong>, atuando desde de <strong> 2016</strong> em desenvolvimento 
   de software, especialmente no desenvolvimento web. Com aplicabilidade na construção de aplicações hibridas, resposivas e cross browser.`,
   BANNER_BUTTON_PORTFOLIO: "Portfolio",
   BANNER_BUTTON_CONTACT: "Contato",
