@@ -13,7 +13,7 @@ import "./styles.scss"
 const Banner = () => {
   const params = {
     particles: {
-      number: { value: 30, density: { enable: true, value_area: 1000 } },
+      number: { value: 50, density: { enable: false, value_area: 1000 } },
       color: { value: "#407BFF" },
       shape: {
         type: "circle",
@@ -58,7 +58,7 @@ const Banner = () => {
       detect_on: "canvas",
       events: {
         onhover: { enable: true, mode: "repulse" },
-        onclick: { enable: true, mode: "push" },
+        onclick: { enable: false, mode: "push" },
         resize: true,
       },
       modes: {
