@@ -1,7 +1,6 @@
 @import "src/assets/sass/variables.scss";
 
 @mixin button_active {
-  &::before {
     top: 0;
     left: 0;
     content: "";
@@ -14,10 +13,8 @@
     position: absolute;
     border-radius: 40px;
     background-image: none;
-    background-color: #0b0c22;
     width: calc(100% - 4px);
     height: calc(100% - 4px);
-  }
 }
 
 .Button {
@@ -42,15 +39,23 @@
   text-decoration: none;
   background-image: linear-gradient(to right, #46bdf4 0%, #2b56f5 100%);
   &.basic {
-    @include button_active();
+    &::before {
+      @include button_active();
+      background-color: #0b0c22;
+    }
     &:hover {
       &::before {
         background-color: transparent;
       }
     }
   }
-  &:hover {
+  &::before {
     @include button_active();
+  }
+  &:hover {
+    &::before {
+      background-color: #0b0c22;
+    }
   }
 }
 
