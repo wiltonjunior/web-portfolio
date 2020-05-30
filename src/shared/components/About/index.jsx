@@ -10,8 +10,8 @@ import "./styles.scss"
 
 const About = () => {
   const item = {
-    shadow: "ABOUT_SECTION_SHADOW",
     title: "ABOUT_SECTION_TITLE",
+    shadow: "ABOUT_SECTION_SHADOW",
     description: "ABOUT_SECTION_DESCRIPTION",
   }
 
