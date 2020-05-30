@@ -13,7 +13,7 @@ const Case = () => {
   const item = {
     title: "Cases",
     shadow: "Portfolio",
-    description: "Navegue em meus tralhos.",
+    description: "Navegue em meus trabalhos.",
   }
 
   const carrocel = useRef(null)
