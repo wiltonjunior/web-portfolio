@@ -15,6 +15,18 @@ export default [
     link: 'https://maismilhas.com.br/'
   },
   {
+    title: "Zabbix Report",
+    image: projeto2,
+    description: "Lady page para divulgação e apresentação da empresa",
+    articles: [
+      {
+        description:
+          "Aplicação multiplataforma cross browser, responsável por divulgar e apresentar o produto. O Front end foi contruido utilizando React e o Back em Nodejs",
+      }
+    ],
+    link: "https://zabbix.report/"
+  },
+  {
     title: "Easy Institute",
     image: projeto2,
     description: "Lady page para divulgação e apresentação da empresa",
