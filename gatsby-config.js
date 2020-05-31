@@ -6,6 +6,9 @@ module.exports = {
     description: `Portfolio de um dev`,
     author: `@gatsbyjs`,
   },
+  siteMetadata: {
+    siteUrl: `https://wiltonjunior.dev`,
+  },
   plugins: [
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-sass`,
@@ -50,6 +53,7 @@ module.exports = {
         }
       }
     },
+    `gatsby-plugin-sitemap`,
     `gatsby-plugin-offline`,
   ],
 }
