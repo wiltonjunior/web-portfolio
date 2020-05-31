@@ -5,8 +5,6 @@ module.exports = {
     title: `Wilton Júnior`,
     description: `Portfolio de um dev`,
     author: `@gatsbyjs`,
-  },
-  siteMetadata: {
     siteUrl: `https://wiltonjunior.dev`,
   },
   plugins: [
@@ -53,6 +51,7 @@ module.exports = {
         }
       }
     },
+    'gatsby-plugin-robots-txt'
     `gatsby-plugin-sitemap`,
     `gatsby-plugin-offline`,
   ],
