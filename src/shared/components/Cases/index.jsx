@@ -34,7 +34,7 @@ const Case = () => {
   }
 
   const prev = () => {
-    let value = slide - 1;
+    let value = slide;
     if (value < 0) {
       value = total -1;
     } 

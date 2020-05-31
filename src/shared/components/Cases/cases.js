@@ -1,5 +1,6 @@
 import projeto1 from '@images/projects/project1.png'
 import projeto2 from '@images/projects/project2.png'
+import projeto3 from '@images/projects/project3.png'
 
 export default [
   {
@@ -9,19 +10,19 @@ export default [
     articles: [
       {
         description:
-          "O MaisMilhas tem como objeto a compra e venda de milhas aéreas, a aplicação foi construida utilizando uma série de tecnologias dentre as quais, destaca-se o Nextjs por aumentar a performace, desempenho e ranking do google, o Back end foi construído utilizando Nodejs",
+          "O MaisMilhas tem como objeto a compra e venda de milhas aéreas, a aplicação foi construida utilizando uma série de tecnologias dentre as quais, destaca-se o Nextjs por aumentar a performace desempenho e ranking do google, o Backend foi construído utilizando Nodejs",
       },
     ],
     link: 'https://maismilhas.com.br/'
   },
   {
     title: "Zabbix Report",
-    image: projeto2,
+    image: projeto3,
     description: "Lady page para divulgação e apresentação da empresa",
     articles: [
       {
         description:
-          "Aplicação multiplataforma cross browser, responsável por divulgar e apresentar o produto. O Front end foi contruido utilizando React e o Back em Nodejs",
+          "Aplicação multiplataforma cross browser, responsável por divulgar e apresentar o produto. O Frontend foi contruido utilizando React e o Backend em Nodejs",
       }
     ],
     link: "https://zabbix.report/"
