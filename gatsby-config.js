@@ -8,16 +8,16 @@ module.exports = {
     siteUrl: `https://wiltonjunior.dev`,
     social: [
       {
-        name: 'github',
-        url: 'https://github.com/wiltonjunior'
-      }
-    ]
+        name: "github",
+        url: "https://github.com/wiltonjunior",
+      },
+    ],
   },
   plugins: [
     {
       resolve: `gatsby-plugin-nprogress`,
       options: {
-        color: `#407BFF`
+        color: `#407BFF`,
       },
     },
     {
@@ -26,7 +26,17 @@ module.exports = {
         trackingId: "UA-168116200-1",
       },
     },
-    `gatsby-plugin-react-helmet`,
+    {
+      resolve: `gatsby-plugin-prefetch-google-fonts`,
+      options: {
+        fonts: [
+          {
+            family: `Montserrat`,
+            variants: [`300`, `400`, `500`, `700`],
+          },
+        ],
+      },
+    }`gatsby-plugin-react-helmet`,
     `gatsby-plugin-sass`,
     {
       resolve: `gatsby-source-filesystem`,
@@ -62,15 +72,14 @@ module.exports = {
       },
     },
     {
-      resolve: 'gatsby-plugin-react-svg',
+      resolve: "gatsby-plugin-react-svg",
       options: {
         rule: {
-          include: /\.inline\.svg$/
-        }
-      }
+          include: /\.inline\.svg$/,
+        },
+      },
     },
-    'gatsby-plugin-robots-txt'
-    `gatsby-plugin-sitemap`,
+    "gatsby-plugin-robots-txt"`gatsby-plugin-sitemap`,
     `gatsby-plugin-offline`,
   ],
 }
