@@ -3,11 +3,23 @@ const path = require("path")
 module.exports = {
   siteMetadata: {
     title: `Wilton Júnior`,
-    description: `Portfolio de um dev`,
-    author: `@gatsbyjs`,
+    description: `Apresentação do curriculo por meio de um portfolio interativo | Wilton Júnior`,
+    author: `Wilton Junior`,
     siteUrl: `https://wiltonjunior.dev`,
+    social: [
+      {
+        name: 'github',
+        url: 'https://github.com/wiltonjunior'
+      }
+    ]
   },
   plugins: [
+    {
+      resolve: `gatsby-plugin-nprogress`,
+      options: {
+        color: `#407BFF`
+      },
+    },
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-sass`,
     {
