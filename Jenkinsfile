@@ -15,7 +15,7 @@ pipeline {
 
   environment {
     APPLICATION_NAME="portfolio"
-    GIT_URL="git@github.com:wiltonjunior/portfolio.git"
+    GIT_URL="git@github.com:wiltonjunior/web-portfolio.git"
     DOCKER_IMAGE="${env.APPLICATION_NAME}:${env.BUILD_NUMBER}" 
   }
 
