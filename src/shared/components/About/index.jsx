@@ -47,7 +47,7 @@ const About = () => {
           </div>
           <div className="column">
             <div className="image_user">
-              <img src={user} />
+              <img src={user} alt="user" />
             </div>
           </div>
         </div>

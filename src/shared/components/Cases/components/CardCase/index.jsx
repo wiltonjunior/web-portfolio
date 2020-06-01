@@ -11,7 +11,7 @@ const CardCase = ({ item, active }) => {
       <div className="card_body">
         <div className="column">
           <div className="card_image">
-            <img src={item.image} />
+            <img src={item.image} alt="image" />
           </div>
         </div>
         <div className="column">
