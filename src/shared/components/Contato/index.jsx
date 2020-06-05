@@ -1,5 +1,7 @@
 import React, { useState } from "react"
 
+import axios from "axios"
+
 import Button from "@components/Button"
 import Container from "@components/Container"
 
@@ -10,7 +12,11 @@ const Contato = () => {
 
   const onChange = ({ target: { value, name } }) => {
     object[name] = value
-    setObject({...object})
+    setObject({ ...object })
+  }
+
+  const onSubmit = async () => {
+    const success = await axios.post('https://api.wiltonjunior.dev/mail', object)
   }
 
   return (
@@ -100,7 +106,7 @@ const Contato = () => {
               </div>
               <div className="row">
                 <div className="form-send">
-                  <Button>Enviar</Button>
+                  <Button onClick={onSubmit} >Enviar</Button>
                 </div>
               </div>
             </div>
