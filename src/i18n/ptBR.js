@@ -24,5 +24,9 @@ export default {
   ABOUT_SECTION_TITLE: "Sobre mim",
   ABOUT_SECTION_DESCRIPTION: "Conheça um pouco da minha historia.",
 
-  ACESS_CASE: "Acessar Case"
+  ACESS_CASE: "Acessar Case",
+
+  CONTATO_FONE: "+55 84 9968-6176",
+  CONTATO_EMAIL: "contato@wiltonjunior.me",
+  CONTATO_WHASTSAP: "Whatsapp",
 }

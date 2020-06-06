@@ -3,6 +3,7 @@ import React, { useState } from "react"
 import axios from "axios"
 
 import Button from "@components/Button"
+import Translate from "@components/Translate"
 import Container from "@components/Container"
 
 import "./styles.scss"
@@ -30,19 +31,23 @@ const Contato = () => {
                   <li>
                     <em className="contact-icon fa-phone"></em>
                     <div className="contact-text">
-                      <span>+55 84 9968-6176</span>
+                      <span>
+                        <Translate>CONTATO_FONE</Translate>
+                       </span>
                     </div>
                   </li>
                   <li>
                     <em className="contact-icon fas fa-envelope"></em>
                     <div className="contact-text">
-                      <span>contato@wiltonjunior.me</span>
+                      <span>
+                      <Translate>CONTATO_EMAIL</Translate>
+                      </span>
                     </div>
                   </li>
                   <li>
                     <em className="contact-icon fas fa-paper-plane"></em>
                     <div className="contact-text">
-                      <span>Whatsapp</span>
+                      <span>  <Translate>CONTATO_WHASTSAP</Translate></span>
                     </div>
                   </li>
                 </ul>
