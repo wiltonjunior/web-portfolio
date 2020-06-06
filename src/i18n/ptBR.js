@@ -29,4 +29,10 @@ export default {
   CONTATO_FONE: "+55 84 9968-6176",
   CONTATO_EMAIL: "contato@wiltonjunior.me",
   CONTATO_WHASTSAP: "Whatsapp",
+  CONTATO_TITLE: "Contato",
+  CONTATO_DESCRITPION:
+    "Se você deseja entrar em contato, preencha o formulário abaixo. Entrarei em contato com você em breve.",
+  CONTATO_INPUT_LABEL_NAME: "Name",
+  CONTATO_INPUT_LABEL_EMAIL: "Email",
+  CONTATO_INPUT_LABEL_MESSAGE: "Mensagem",
 }

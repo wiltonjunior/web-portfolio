@@ -17,7 +17,10 @@ const Contato = () => {
   }
 
   const onSubmit = async () => {
-    const success = await axios.post('https://api.wiltonjunior.dev/mail', object)
+    const success = await axios.post(
+      "https://api.wiltonjunior.dev/mail",
+      object
+    )
   }
 
   return (
@@ -33,21 +36,24 @@ const Contato = () => {
                     <div className="contact-text">
                       <span>
                         <Translate>CONTATO_FONE</Translate>
-                       </span>
+                      </span>
                     </div>
                   </li>
                   <li>
                     <em className="contact-icon fas fa-envelope"></em>
                     <div className="contact-text">
                       <span>
-                      <Translate>CONTATO_EMAIL</Translate>
+                        <Translate>CONTATO_EMAIL</Translate>
                       </span>
                     </div>
                   </li>
                   <li>
                     <em className="contact-icon fas fa-paper-plane"></em>
                     <div className="contact-text">
-                      <span>  <Translate>CONTATO_WHASTSAP</Translate></span>
+                      <span>
+                        {" "}
+                        <Translate>CONTATO_WHASTSAP</Translate>
+                      </span>
                     </div>
                   </li>
                 </ul>
@@ -58,17 +64,20 @@ const Contato = () => {
 
           <div className="column">
             <div className="header">
-              <h2 className="title">Contato</h2>
+              <h2 className="title">
+                <Translate>CONTATO_TITLE</Translate>
+              </h2>
               <p className="description">
-                Se você deseja entrar em contato, preencha o formulário abaixo.
-                Entrarei em contato com você em breve.
+                <Translate>CONTATO_DESCRITPION</Translate>
               </p>
             </div>
             <div className="form">
               <div className="row">
                 <div className="col-6">
                   <div className="field-item">
-                    <label className="field-label">Nome</label>
+                    <label className="field-label">
+                      <Translate>CONTATO_INPUT_LABEL_NAME</Translate>
+                    </label>
                     <div className="field-wrap">
                       <input
                         type="text"
@@ -83,7 +92,9 @@ const Contato = () => {
                 </div>
                 <div className="col-6">
                   <div className="field-item">
-                    <label className="field-label">Email</label>
+                    <label className="field-label">
+                      <Translate>CONTATO_INPUT_LABEL_EMAIL</Translate>
+                    </label>
                     <div className="field-wrap">
                       <input
                         type="email"
@@ -98,7 +109,9 @@ const Contato = () => {
                 </div>
               </div>
               <div className="field-item">
-                <label className="field-label">Messagem</label>
+                <label className="field-label">
+                  <Translate>CONTATO_INPUT_LABEL_MESSAGE</Translate>
+                </label>
                 <div className="field-wrap">
                   <textarea
                     name="contact-message"
@@ -111,7 +124,7 @@ const Contato = () => {
               </div>
               <div className="row">
                 <div className="form-send">
-                  <Button onClick={onSubmit} >Enviar</Button>
+                  <Button onClick={onSubmit}>CONTATO_FORM_SEND</Button>
                 </div>
               </div>
             </div>
