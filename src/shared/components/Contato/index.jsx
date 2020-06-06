@@ -3,7 +3,7 @@ import React, { useState } from "react"
 import axios from "axios"
 
 import Button from "@components/Button"
-import Translate from "@components/Translate"
+import Translate, {dict} from "@components/Translate"
 import Container from "@components/Container"
 
 import "./styles.scss"
@@ -51,7 +51,6 @@ const Contato = () => {
                     <em className="contact-icon fas fa-paper-plane"></em>
                     <div className="contact-text">
                       <span>
-                        {" "}
                         <Translate>CONTATO_WHASTSAP</Translate>
                       </span>
                     </div>
@@ -83,7 +82,7 @@ const Contato = () => {
                         type="text"
                         name="contact-name"
                         className="contact-input"
-                        placeholder="Name"
+                        placeholder={dict.translate("CONTATO_INPUT_PLACEHOLDER_NAME")}
                         value={object.Name}
                         onChange={onChange}
                       />
@@ -100,7 +99,7 @@ const Contato = () => {
                         type="email"
                         name="contact-email"
                         className="contact-input"
-                        placeholder="Email"
+                        placeholder={dict.translate("CONTATO_INPUT_PLACEHOLDER_EMAIL")}
                         value={object.Email}
                         onChange={onChange}
                       />
@@ -116,7 +115,7 @@ const Contato = () => {
                   <textarea
                     name="contact-message"
                     className="contact-input"
-                    placeholder="Messagem"
+                    placeholder={dict.translate("CONTATO_INPUT_PLACEHOLDER_MESSAGE")}
                     value={object.Message}
                     onChange={onChange}
                   />
