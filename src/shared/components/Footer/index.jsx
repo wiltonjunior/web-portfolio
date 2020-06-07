@@ -1,6 +1,7 @@
 import React from "react"
 
 import Container from "@components/Container"
+import Translate from "@components/Translate"
 
 import "./styles.scss"
 
@@ -9,7 +10,7 @@ const Footer = () => {
     <div className="Footer">
       <Container>
         <div className="Footer_main">
-        Copyright © 2020 WiltonJunior. All Rights Reserved
+          <Translate>FOOTER_TITLE</Translate>
         </div>
       </Container>
     </div>
