@@ -2,18 +2,19 @@ import React, { useEffect, useRef, useState } from "react"
 
 import Section from "@components/Section"
 import Container from "@components/Container"
+import Translate from "@components/Translate"
 
 import cases from "./cases"
-
 import CardCase from "./components/CardCase"
 
 import "./styles.scss"
 
 const Case = () => {
+
   const item = {
-    title: "Cases",
-    shadow: "Portfolio",
-    description: "Navegue em meus trabalhos.",
+    title: "CASE_TITLE",
+    shadow: "CASE_SHODOW",
+    description: "CASE_DESCRIPTION",
   }
 
   const carrocel = useRef(null)
@@ -26,7 +27,6 @@ const Case = () => {
 
   const next = () => {
     let value = slide + 1;
-    console.log(value)
     if (value === total) {
       value = 0
     } 
