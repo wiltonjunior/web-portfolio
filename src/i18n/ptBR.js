@@ -40,7 +40,7 @@ export default {
   CONTATO_INPUT_PLACEHOLDER_EMAIL: "Email",
   CONTATO_INPUT_PLACEHOLDER_MESSAGE: "Mensagem",
 
-  FOOTER_TITLE: "Copyright © 2020 WiltonJunior. All Rights Reserved",
+  FOOTER_TITLE: "©Copyright 2020 WiltonJunior. All Rights Reserved",
 
   CASE_TITLE: "Cases",
   CASE_SHODOW: "Portfolio",
