@@ -3,8 +3,8 @@ import React, { useState } from "react"
 import axios from "axios"
 
 import Button from "@components/Button"
-import Translate, {dict} from "@components/Translate"
 import Container from "@components/Container"
+import Translate, {dict} from "@components/Translate"
 
 import "./styles.scss"
 
@@ -17,8 +17,7 @@ const Contato = () => {
   }
 
   const onSubmit = async () => {
-    const success = await axios.post(
-      "https://api.wiltonjunior.dev/mail",
+    const success = await axios.post("https://api.wiltonjunior.dev/mail",
       object
     )
   }
@@ -81,10 +80,10 @@ const Contato = () => {
                       <input
                         type="text"
                         name="contact-name"
-                        className="contact-input"
-                        placeholder={dict.translate("CONTATO_INPUT_PLACEHOLDER_NAME")}
                         value={object.Name}
                         onChange={onChange}
+                        className="contact-input"
+                        placeholder={dict.translate("CONTATO_INPUT_PLACEHOLDER_NAME")}
                       />
                     </div>
                   </div>

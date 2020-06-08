@@ -4,13 +4,12 @@ import projeto3 from '@images/projects/project3.png'
 
 export default [
   {
-    title: "Mais Milhas",
+    title: "CASE_ONE_TITLE",
     image: projeto1,
-    description: "Uma plataforma para a compra e venda de milhas aéreas",
+    description: "CASE_ONE_DESCRIPTION ",
     articles: [
       {
-        description:
-          "O MaisMilhas tem como objeto a compra e venda de milhas aéreas, a aplicação foi construida utilizando uma série de tecnologias dentre as quais, destaca-se o Nextjs por aumentar a performace desempenho e ranking do google, o Backend foi construído utilizando Nodejs",
+        description: 'CASE_ONE_ARTICLE_ONE_TITLE',
       },
     ],
     link: 'https://maismilhas.com.br/'

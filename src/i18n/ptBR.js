@@ -45,4 +45,8 @@ export default {
   CASE_TITLE: "Cases",
   CASE_SHODOW: "Portfolio",
   CASE_DESCRIPTION: "Navegue em meus trabalhos.",
+
+  CASE_ONE_TITLE: "Mais Milhas",
+CASE_ONE_DESCRIPTION: "Uma plataforma para a compra e venda de milhas aéreas",
+CASE_ONE_ARTICLE_ONE_TITLE: "O MaisMilhas tem como objeto a compra e venda de milhas aéreas, a aplicação foi construida utilizando uma série de tecnologias dentre as quais, destaca-se o Nextjs por aumentar a performace desempenho e ranking do google, o Backend foi construído utilizando Nodejs",
 }
