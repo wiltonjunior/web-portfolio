@@ -47,6 +47,17 @@ export default {
   CASE_DESCRIPTION: "Navegue em meus trabalhos.",
 
   CASE_ONE_TITLE: "Mais Milhas",
-CASE_ONE_DESCRIPTION: "Uma plataforma para a compra e venda de milhas aéreas",
-CASE_ONE_ARTICLE_ONE_TITLE: "O MaisMilhas tem como objeto a compra e venda de milhas aéreas, a aplicação foi construida utilizando uma série de tecnologias dentre as quais, destaca-se o Nextjs por aumentar a performace desempenho e ranking do google, o Backend foi construído utilizando Nodejs",
-}
+  CASE_ONE_DESCRIPTION: "Uma plataforma para a compra e venda de milhas aéreas",
+  CASE_ONE_ARTICLE_ONE_TITLE:
+    "O MaisMilhas tem como objeto a compra e venda de milhas aéreas, a aplicação foi construida utilizando uma série de tecnologias dentre as quais, destaca-se o Nextjs por aumentar a performace desempenho e ranking do google, o Backend foi construído utilizando Nodejs",
+
+  CASE_TWO_TITLE: "Zabbix Report",
+  CASE_TWO_DESCRIPTION: "Lady page para divulgação e apresentação da empresa",
+  CASE_TWO_ARTICLE_ONE_TITLE:
+    "Aplicação multiplataforma cross browser, responsável por divulgar e apresentar o produto. O Frontend foi contruido utilizando React e o Backend em Nodejs",
+
+    CASE_THREE_TITLE: "Easy Institute",
+CASE_THREE_DESCRIPTION: "Lady page para divulgação e apresentação da empresa",
+CASE_THREE_ARTICLE_ONE_TITLE: "Aplicação multiplataforma cross browser, responsável por divulgar e apresentar a escola e suas unidades, constituído por uma área administrativa para controle das filiais. O Front end foi contruido utilizando Angular.io 4 e o Back em Nodejs",
+
+  }

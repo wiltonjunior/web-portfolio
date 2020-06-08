@@ -15,25 +15,23 @@ export default [
     link: 'https://maismilhas.com.br/'
   },
   {
-    title: "Zabbix Report",
+    title: "CASE_TWO_TITLE ",
     image: projeto3,
-    description: "Lady page para divulgação e apresentação da empresa",
+    description: " CASE_TWO_DESCRIPTION",
     articles: [
       {
-        description:
-          "Aplicação multiplataforma cross browser, responsável por divulgar e apresentar o produto. O Frontend foi contruido utilizando React e o Backend em Nodejs",
+        description: 'CASE_TWO_ARTICLE_ONE_TITLE',
       }
     ],
     link: "https://zabbix.report/"
   },
   {
-    title: "Easy Institute",
+    title: "CASE_THREE_TITLE",
     image: projeto2,
-    description: "Lady page para divulgação e apresentação da empresa",
+    description: " CASE_THREE_DESCRIPTION",
     articles: [
       {
-        description:
-          "Aplicação multiplataforma cross browser, responsável por divulgar e apresentar a escola e suas unidades, constituído por uma área administrativa para controle das filiais. O Front end foi contruido utilizando Angular.io 4 e o Back em Nodejs",
+        description: 'CASE_THREE_ARTICLE_ONE_TITLE',
       }
     ],
     link: "http://easyinstitute.com.br/#/"
