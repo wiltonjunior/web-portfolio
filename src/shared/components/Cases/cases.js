@@ -36,4 +36,15 @@ export default [
     ],
     link: "http://easyinstitute.com.br/#/"
   },
+  {
+    title: "CASE_THREE_TITLE",
+    image: projeto2,
+    description: " CASE_THREE_DESCRIPTION",
+    articles: [
+      {
+        description: 'CASE_THREE_ARTICLE_ONE_TITLE',
+      }
+    ],
+    link: "http://easyinstitute.com.br/#/"
+  },
 ]
