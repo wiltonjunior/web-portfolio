@@ -46,14 +46,6 @@ const Contato = () => {
                       </span>
                     </div>
                   </li>
-                  <li>
-                    <em className="contact-icon fas fa-paper-plane"></em>
-                    <div className="contact-text">
-                      <span>
-                        <Translate>CONTATO_WHASTSAP</Translate>
-                      </span>
-                    </div>
-                  </li>
                 </ul>
                 <div className="circle-animation"></div>
               </div>

@@ -65,25 +65,25 @@
           }
           &::before {
             left: 0;
-            top: 0px;
+            top: -4px;
             content: "";
-            height: 99%;
+            height: 100%;
             width: 100%;
             z-index: 100;
             position: absolute;
             border-radius: 20px;
-            background: rgba(0, 0, 0, 0.3);
+            background: linear-gradient(to right, rgba(12, 13, 37, .2), rgba(0, 0, 0, 1));
           }
           &::after {
             content: " ";
             left: 35px;
             bottom: -30px;
             width: 100%;
-            opacity: 0.1;
+            opacity: 0.2;
             height: 70%;
             border-radius: 10px;
             position: absolute;
-            background-color: #407bff;
+            background-color: #000;
             box-shadow: 0 0.6rem 2.5rem rgba(99, 99, 99, 0.175);
           }
         }
