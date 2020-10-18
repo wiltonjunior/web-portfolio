@@ -32,17 +32,10 @@ const About = () => {
         <Section item={item} />
         <div className="about_main">
           <div className="column">
-            <div className="header">
-              {articles.map((item, index) => (
-                <div key={index} className="article">
-                  <h2>
-                    <Translate>{item.title}</Translate>
-                  </h2>
-                  <p>
-                    <Translate>{item.description}</Translate>
-                  </p>
-                </div>
-              ))}
+            <div className="about_title">
+              <p>
+                <Translate html >ABOUT_DESCRIPTION</Translate>
+              </p>
             </div>
           </div>
           <div className="column">

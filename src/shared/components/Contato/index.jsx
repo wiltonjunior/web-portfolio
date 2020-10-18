@@ -51,7 +51,6 @@ const Contato = () => {
               </div>
             </div>
           </div>
-
           <div className="column">
             <div className="header">
               <h2 className="title">

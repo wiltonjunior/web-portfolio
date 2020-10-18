@@ -12,14 +12,25 @@
     background-position: 60% 100%;
     background-repeat: no-repeat;
     background-image: url(../../../assets/images/img/shape/dot.png);
-    // background-image: url(../../../assets/images/img/shape/graphic-b.png), url(../../../assets/images/img/shape/dot.png);
   }
   .about_main {
     display: flex;
     .column {
       flex: 1 50%;
       &:first-child {
-        padding: 2rem;
+        padding: 2.5rem;
+        .about_title {
+          p {
+            margin: 0;
+            color: #d4d4d4;
+            font-size: 18px;
+            margin-top: 10px;
+            a{
+              color: #407bff;
+              text-decoration: none;
+            }
+          }
+        }
         .header {
           .article {
             margin: 2rem 0;
@@ -72,7 +83,11 @@
             z-index: 100;
             position: absolute;
             border-radius: 20px;
-            background: linear-gradient(to right, rgba(12, 13, 37, .2), rgba(0, 0, 0, 1));
+            background: linear-gradient(
+              to right,
+              rgba(12, 13, 37, 0.2),
+              rgba(0, 0, 0, 1)
+            );
           }
           &::after {
             content: " ";

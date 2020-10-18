@@ -6,7 +6,7 @@ export default [
   {
     title: "CASE_ONE_TITLE",
     image: projeto1,
-    description: "CASE_ONE_DESCRIPTION ",
+    description: "CASE_ONE_DESCRIPTION",
     articles: [
       {
         description: 'CASE_ONE_ARTICLE_ONE_TITLE',
@@ -28,7 +28,7 @@ export default [
   {
     title: "CASE_THREE_TITLE",
     image: projeto2,
-    description: " CASE_THREE_DESCRIPTION",
+    description: "CASE_THREE_DESCRIPTION",
     articles: [
       {
         description: 'CASE_THREE_ARTICLE_ONE_TITLE',
@@ -39,7 +39,7 @@ export default [
   {
     title: "CASE_THREE_TITLE",
     image: projeto2,
-    description: " CASE_THREE_DESCRIPTION",
+    description: "CASE_THREE_DESCRIPTION",
     articles: [
       {
         description: 'CASE_THREE_ARTICLE_ONE_TITLE',
