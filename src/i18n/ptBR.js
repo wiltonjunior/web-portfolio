@@ -37,8 +37,6 @@ export default {
 
   ACESS_CASE: "Acessar Case",
 
-  CONTATO_FONE: "+55 84 9468-6176",
-  CONTATO_EMAIL: "wiltonjuniorssd@gmail.com",
   CONTATO_TITLE: "Contato",
   CONTATO_DESCRITPION:
     "Se você deseja entrar em contato, preencha o formulário abaixo. Entrarei em contato com você em breve.",
@@ -49,6 +47,12 @@ export default {
   CONTATO_INPUT_PLACEHOLDER_NAME: "Name",
   CONTATO_INPUT_PLACEHOLDER_EMAIL: "Email",
   CONTATO_INPUT_PLACEHOLDER_MESSAGE: "Mensagem",
+
+  CONTATO_WHATSAPP: "Whatsapp",
+  CONTATO_INSTAGRAM: "Instagram",
+  CONTATO_EMAIL: "Email",
+  CONTATO_LINKEDIN: "Linkedin",
+  CONTATO_GIT: "Git Hub",
 
   FOOTER_TITLE: "©Copyright 2020 WiltonJunior. All Rights Reserved",
 

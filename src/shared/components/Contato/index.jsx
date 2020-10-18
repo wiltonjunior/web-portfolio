@@ -4,7 +4,13 @@ import axios from "axios"
 
 import Button from "@components/Button"
 import Container from "@components/Container"
-import Translate, {dict} from "@components/Translate"
+import Translate, { dict } from "@components/Translate"
+
+import Git from "@svg/inline/git.inline.svg"
+import Email from "@svg/inline/email.inline.svg"
+import Instagram from "@svg/inline/instagram.inline.svg"
+import Whatsapp from "@svg/inline/whatsapp.inline.svg"
+import Linkedin from "@svg/inline/linkedin.inline.svg"
 
 import "./styles.scss"
 
@@ -17,10 +23,39 @@ const Contato = () => {
   }
 
   const onSubmit = async () => {
-    const success = await axios.post("https://api.wiltonjunior.dev/mail",
+    const success = await axios.post(
+      "https://api.wiltonjunior.dev/mail",
       object
     )
   }
+
+  const list = [
+    {
+      icon: Whatsapp,
+      title: "CONTATO_WHATSAPP",
+      href: 'https://api.whatsapp.com/send?phone=5584994686176&text=Olá,%20meu%20amigo!'
+    },
+    {
+      icon: Instagram,
+      title: "CONTATO_INSTAGRAM",
+      href: "https://www.instagram.com/wilton.juniorr/"
+    },
+    {
+      icon: Email,
+      title: "CONTATO_EMAIL",
+      href: "mailto:wiltonjuniorssd@gmail.com?subject=Contato&amp;body=Olá,%20meu%20amigo"
+    },
+    {
+      icon: Linkedin,
+      title: "CONTATO_LINKEDIN",
+      href: 'https://www.linkedin.com/in/wilton-junior/'
+    },
+    {
+      icon: Git,
+      title: "CONTATO_GIT",
+      href: 'https://github.com/wiltonjunior'
+    },
+  ]
 
   return (
     <div id="contact" className="Contato">
@@ -30,22 +65,24 @@ const Contato = () => {
             <div className="contact">
               <div className="block-contact">
                 <ul className="contact-list">
-                  <li>
-                    <em className="contact-icon fa-phone"></em>
-                    <div className="contact-text">
-                      <span>
-                        <Translate>CONTATO_FONE</Translate>
-                      </span>
-                    </div>
-                  </li>
-                  <li>
+                  {list.map((item, index) => (
+                    <li key={index}>
+                      <span className="icon">{<item.icon />}</span>
+                      <div className="contact-text">
+                        <a href={item.href} target="_black">
+                          <Translate>{item.title}</Translate>
+                        </a>
+                      </div>
+                    </li>
+                  ))}
+                  {/* <li>
                     <em className="contact-icon fas fa-envelope"></em>
                     <div className="contact-text">
                       <span>
                         <Translate>CONTATO_EMAIL</Translate>
                       </span>
                     </div>
-                  </li>
+                  </li> */}
                 </ul>
                 <div className="circle-animation"></div>
               </div>
@@ -74,7 +111,9 @@ const Contato = () => {
                         value={object.Name}
                         onChange={onChange}
                         className="contact-input"
-                        placeholder={dict.translate("CONTATO_INPUT_PLACEHOLDER_NAME")}
+                        placeholder={dict.translate(
+                          "CONTATO_INPUT_PLACEHOLDER_NAME"
+                        )}
                       />
                     </div>
                   </div>
@@ -89,7 +128,9 @@ const Contato = () => {
                         type="email"
                         name="contact-email"
                         className="contact-input"
-                        placeholder={dict.translate("CONTATO_INPUT_PLACEHOLDER_EMAIL")}
+                        placeholder={dict.translate(
+                          "CONTATO_INPUT_PLACEHOLDER_EMAIL"
+                        )}
                         value={object.Email}
                         onChange={onChange}
                       />
@@ -105,7 +146,9 @@ const Contato = () => {
                   <textarea
                     name="contact-message"
                     className="contact-input"
-                    placeholder={dict.translate("CONTATO_INPUT_PLACEHOLDER_MESSAGE")}
+                    placeholder={dict.translate(
+                      "CONTATO_INPUT_PLACEHOLDER_MESSAGE"
+                    )}
                     value={object.Message}
                     onChange={onChange}
                   />

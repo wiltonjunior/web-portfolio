@@ -98,6 +98,25 @@
             background-image: url(../../../assets/images/img/dots.png);
             .contact-list {
               color: $text;
+              z-index: 1000;
+              position: relative;
+              padding-left: 10px;
+              li {
+                display: flex;
+                margin-bottom: 15px;
+                .icon {
+                  margin-right: 10px;
+                  svg {
+                    width: 20px;
+                    height: 20px;
+                    fill: #fff;
+                  }
+                }
+                a {
+                  color: #fff;
+                  text-decoration: none;
+                }
+              }
             }
             .circle-animation {
               top: 50%;
