@@ -10,7 +10,6 @@ import CardCase from "./components/CardCase"
 import "./styles.scss"
 
 const Case = () => {
-
   const item = {
     title: "CASE_TITLE",
     shadow: "CASE_SHODOW",
@@ -26,23 +25,23 @@ const Case = () => {
   }, [])
 
   const next = () => {
-    let value = slide + 1;
+    let value = slide + 1
     if (value === total) {
       value = 0
-    } 
+    }
     setSlider(value)
   }
 
   const prev = () => {
-    let value = slide;
+    let value = slide - 1
     if (value < 0) {
-      value = total -1;
-    } 
+      value = total - 1
+    }
     setSlider(value)
   }
 
   return (
-    <div id='cases' className="Cases">
+    <div id="cases" className="Cases">
       <Container>
         <Section item={item} />
         <div className="carousel-wrapper">
@@ -52,13 +51,11 @@ const Case = () => {
             ))}
           </div>
           <div className="controls">
-            <div onClick={prev} className="next"></div>
+            <div onClick={prev} className="next" />
             {cases.map((item, index) => (
-              <span
-                className={`point ${index === slide ? "active" : ""}`}
-              ></span>
+              <span className={`point ${index === slide ? "active" : ""}`} />
             ))}
-            <div onClick={next} className="prev"></div>
+            <div onClick={next} className="prev" />
           </div>
         </div>
       </Container>
