@@ -17,7 +17,7 @@ export default [
   {
     title: "CASE_TWO_TITLE ",
     image: projeto3,
-    description: " CASE_TWO_DESCRIPTION",
+    description: "CASE_TWO_DESCRIPTION",
     articles: [
       {
         description: 'CASE_TWO_ARTICLE_ONE_TITLE',

@@ -17,7 +17,7 @@
   }
 }
 
-.Contato {
+.Contact {
   padding: 10rem 0;
   position: relative;
   background-color: #0c0d25;
@@ -32,7 +32,7 @@
     background-repeat: no-repeat;
     background-image: url(../../../assets/images/img/shape/plus.png);
   }
-  .contato_main {
+  .contact_main {
     display: flex;
     .column {
       flex: 1 50%;
@@ -186,9 +186,9 @@
 }
 
 @media #{$max-media-desktop-small} {
-  .Contato {
+  .Contact {
     padding: 3rem 0;
-    .contato_main {
+    .contact_main {
       flex-direction: column;
       .column {
         flex: 1;

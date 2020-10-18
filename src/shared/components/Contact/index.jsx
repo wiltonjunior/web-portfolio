@@ -14,7 +14,7 @@ import Linkedin from "@svg/inline/linkedin.inline.svg"
 
 import "./styles.scss"
 
-const Contato = () => {
+const Contact = () => {
   const [object, setObject] = useState({})
 
   const onChange = ({ target: { value, name } }) => {
@@ -32,35 +32,35 @@ const Contato = () => {
   const list = [
     {
       icon: Whatsapp,
-      title: "CONTATO_WHATSAPP",
+      title: "CONTACT_WHATSAPP",
       href: 'https://api.whatsapp.com/send?phone=5584994686176&text=Olá,%20meu%20amigo!'
     },
     {
       icon: Instagram,
-      title: "CONTATO_INSTAGRAM",
+      title: "CONTACT_INSTAGRAM",
       href: "https://www.instagram.com/wilton.juniorr/"
     },
     {
       icon: Email,
-      title: "CONTATO_EMAIL",
+      title: "CONTACT_EMAIL",
       href: "mailto:wiltonjuniorssd@gmail.com?subject=Contato&amp;body=Olá,%20meu%20amigo"
     },
     {
       icon: Linkedin,
-      title: "CONTATO_LINKEDIN",
+      title: "CONTACT_LINKEDIN",
       href: 'https://www.linkedin.com/in/wilton-junior/'
     },
     {
       icon: Git,
-      title: "CONTATO_GIT",
+      title: "CONTACT_GIT",
       href: 'https://github.com/wiltonjunior'
     },
   ]
 
   return (
-    <div id="contact" className="Contato">
+    <div id="contact" className="Contact">
       <Container>
-        <div className="contato_main">
+        <div className="contact_main">
           <div className="column">
             <div className="contact">
               <div className="block-contact">
@@ -79,7 +79,7 @@ const Contato = () => {
                     <em className="contact-icon fas fa-envelope"></em>
                     <div className="contact-text">
                       <span>
-                        <Translate>CONTATO_EMAIL</Translate>
+                        <Translate>CONTACT_EMAIL</Translate>
                       </span>
                     </div>
                   </li> */}
@@ -91,10 +91,10 @@ const Contato = () => {
           <div className="column">
             <div className="header">
               <h2 className="title">
-                <Translate>CONTATO_TITLE</Translate>
+                <Translate>CONTACT_TITLE</Translate>
               </h2>
               <p className="description">
-                <Translate>CONTATO_DESCRITPION</Translate>
+                <Translate>CONTACT_DESCRITPION</Translate>
               </p>
             </div>
             <div className="form">
@@ -102,7 +102,7 @@ const Contato = () => {
                 <div className="col-6">
                   <div className="field-item">
                     <label className="field-label">
-                      <Translate>CONTATO_INPUT_LABEL_NAME</Translate>
+                      <Translate>CONTACT_INPUT_LABEL_NAME</Translate>
                     </label>
                     <div className="field-wrap">
                       <input
@@ -112,7 +112,7 @@ const Contato = () => {
                         onChange={onChange}
                         className="contact-input"
                         placeholder={dict.translate(
-                          "CONTATO_INPUT_PLACEHOLDER_NAME"
+                          "CONTACT_INPUT_PLACEHOLDER_NAME"
                         )}
                       />
                     </div>
@@ -121,7 +121,7 @@ const Contato = () => {
                 <div className="col-6">
                   <div className="field-item">
                     <label className="field-label">
-                      <Translate>CONTATO_INPUT_LABEL_EMAIL</Translate>
+                      <Translate>CONTACT_INPUT_LABEL_EMAIL</Translate>
                     </label>
                     <div className="field-wrap">
                       <input
@@ -129,7 +129,7 @@ const Contato = () => {
                         name="contact-email"
                         className="contact-input"
                         placeholder={dict.translate(
-                          "CONTATO_INPUT_PLACEHOLDER_EMAIL"
+                          "CONTACT_INPUT_PLACEHOLDER_EMAIL"
                         )}
                         value={object.Email}
                         onChange={onChange}
@@ -140,14 +140,14 @@ const Contato = () => {
               </div>
               <div className="field-item">
                 <label className="field-label">
-                  <Translate>CONTATO_INPUT_LABEL_MESSAGE</Translate>
+                  <Translate>CONTACT_INPUT_LABEL_MESSAGE</Translate>
                 </label>
                 <div className="field-wrap">
                   <textarea
                     name="contact-message"
                     className="contact-input"
                     placeholder={dict.translate(
-                      "CONTATO_INPUT_PLACEHOLDER_MESSAGE"
+                      "CONTACT_INPUT_PLACEHOLDER_MESSAGE"
                     )}
                     value={object.Message}
                     onChange={onChange}
@@ -156,7 +156,7 @@ const Contato = () => {
               </div>
               <div className="row">
                 <div className="form-send">
-                  <Button onClick={onSubmit}>CONTATO_FORM_SEND</Button>
+                  <Button onClick={onSubmit}>CONTACT_FORM_SEND</Button>
                 </div>
               </div>
             </div>
@@ -167,4 +167,4 @@ const Contato = () => {
   )
 }
 
-export default Contato
+export default Contact
