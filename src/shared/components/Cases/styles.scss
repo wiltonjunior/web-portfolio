@@ -63,14 +63,14 @@
         &.active {
           opacity: 1;
           position: relative;
-          z-index: 100;
+          z-index: 10;
         }
       }
     }
     .controls {
       right: 0;
       top: 50%;
-      z-index: 100;
+      z-index: 10;
       position: absolute;
       .next {
         width: 50px;
@@ -138,16 +138,16 @@
       .carousel {
         .CardCase {
           padding: 0;
-          margin-bottom: 4rem;
+          margin-bottom: 2rem;
         }
       }
       .controls {
-        bottom: 0;
         top: auto;
-        right: 10%;
         display: flex;
-        position: absolute;
-        transform: translate(-50%, 0%);
+        display: flex;
+        position: relative;
+        align-items: center;
+        justify-content: center;
       }
     }
   }

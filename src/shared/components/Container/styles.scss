@@ -1,9 +1,7 @@
 @import "src/assets/sass/variables.scss";
 
 .Container {
-  z-index: 100;
   margin: 0 15rem;
-  position: relative;
 }
 
 @media #{$max-media-desktop-medium} {

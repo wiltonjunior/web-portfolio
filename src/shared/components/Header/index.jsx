@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from "react"
 
+import clsx from "clsx"
+
 import Button from "@components/Button"
 import Container from "@components/Container"
 import Translate from "@components/Translate"
@@ -10,6 +12,7 @@ const Header = () => {
   let scrollWidth = []
   const [active, setActive] = useState(0)
   const [className, setClassName] = useState("")
+  const [menuMobile, setMenuMobile] = useState(false)
 
   useEffect(() => {
     window.onscroll = () => handleScroll()
@@ -70,8 +73,21 @@ const Header = () => {
     { title: "HEADER_ITEM_TITLE_ABOUT", id: "about" },
     { title: "HEADER_ITEM_TITLE_CASES", id: "cases" },
     { title: "HEADER_ITEM_TITLE_CONTACT", id: "contact" },
-    { component: () => <Button basic>HEADER_ITEM_TITLE_CV</Button> },
+    {
+      component: () => (
+        <Button
+          href="https://wiltonjunior.s3-sa-east-1.amazonaws.com/Wilton_Silva_dos_Santos_J_nior.pdf"
+          basic
+        >
+          HEADER_ITEM_TITLE_CV
+        </Button>
+      ),
+    },
   ]
+
+  const openMenuMobile = () => {
+    setMenuMobile(!menuMobile)
+  }
 
   const logo = () => {
     return (
@@ -105,6 +121,8 @@ const Header = () => {
     )
   }
 
+  const classes = clsx(["menu_mobile"], { active: menuMobile })
+
   return (
     <div className="Header">
       <div className={className}>
@@ -113,12 +131,12 @@ const Header = () => {
             {logo()}
             {menu()}
           </div>
-          <div className="header_body_mobile">
+          <div className={classes}>
             <div className="navbar">
               {logo()}
-              <span className="hamburger-box" />
+              <span onClick={openMenuMobile} className="hamburger-box" />
             </div>
-            {/* {menu()} */}
+            {menuMobile && <div className="menu_mobile_body"> {menu()}</div>}
           </div>
         </Container>
       </div>

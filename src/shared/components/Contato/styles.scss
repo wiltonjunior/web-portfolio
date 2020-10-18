@@ -98,7 +98,7 @@
             background-image: url(../../../assets/images/img/dots.png);
             .contact-list {
               color: $text;
-              z-index: 1000;
+              z-index: 10;
               position: relative;
               padding-left: 10px;
               li {
@@ -159,7 +159,7 @@
       &:last-child {
         padding: 10px;
         .form {
-          z-index: 100;
+          z-index: 10;
           position: relative;
           .row {
             width: 100%;
@@ -187,6 +187,7 @@
 
 @media #{$max-media-desktop-small} {
   .Contato {
+    padding: 3rem 0;
     .contato_main {
       flex-direction: column;
       .column {
@@ -195,6 +196,14 @@
           .contact {
             padding: 0;
             .block-contact {
+              .contact-list {
+                li {
+                  margin-bottom: 10px;
+                  a {
+                    font-size: 12px;
+                  }
+                }
+              }
               .circle-animation {
                 height: 300px;
                 width: 300px;

@@ -14,7 +14,9 @@
 }
 
 .Header {
+  z-index: 20;
   height: 10rem;
+  position: relative;
   .header-fixed {
     left: 0;
     right: 0;
@@ -109,7 +111,7 @@
     }
   }
 
-  .header_body_mobile {
+  .menu_mobile {
     display: none;
   }
 }
@@ -163,8 +165,53 @@
     .logo{
       font-size: 32px;
     }
-    .header_body_mobile {
+    .menu_mobile {
       display: block;
+      position: relative;
+      box-sizing: border-box;
+      &.active{
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 999;
+        padding: 0rem 1rem;
+        position: absolute;
+        background-color: #000;
+      }
+      .menu_mobile_body{
+        height: 100vh;
+        padding: 2rem 4rem;
+        .menu {
+          ul {
+            padding: 0;
+            li {
+              width: 100%;
+              margin: 2rem 0;
+              color: #fff;
+              display: flex;
+              cursor: pointer;
+              list-style: none;
+              font-size: 1.5rem;
+              position: relative;
+              align-items: center;
+              justify-content: center;
+              padding-bottom: 1rem;
+              &.active {
+                @include active_item_menu()
+              }
+              &:hover{
+                @include active_item_menu()
+              }
+              &:last-child{
+                color: #fff;
+                &::before {
+                  display: none;
+                }
+              }
+            }
+          }
+        }
+      }
       .navbar {
         display: flex;
         padding: 10px;

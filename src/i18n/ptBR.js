@@ -14,16 +14,16 @@ export default {
   BANNER_BUTTON_CONTACT: "Contato",
 
   ABOUT_DESCRIPTION: `Programador e desenvolvedor há mais de <strong>5 anos</strong> atuando diretamente no mercado.
-                      Tive início na carreira dentro da universidade, atuando em projetos de pesquisa ensino e extenção, 
-                      foi quando percebi o que realmente nasci para fazer: <strong>codar</strong>, adoro construir templates de zero, sem a 
-                      necessidade de utilizar qualquer framamework css, quando maior o desafio, melhor.
-                      </br> </br> 
-                      Meu primeiro emprego foi em uma <strong>multinacional</strong>, que me proporcionou um alavancamento na entrada do mercado, 
-                      a partir daí começou com projetos externos das mais diversas formas, Websites, Aplicativos, Sistemas, adquirindo um vasto
-                      conhecimento nas diversas linguagens de programação hoje utilizadas no mercado.
-                      </br> </br> 
-                      Contínuo investindo cada vez mais na carreira como desenvolvedor, estudando e passando um pouco da minha experiência para meus amigos, junto a comunidade, com esse intuito criamos uma plataforma para os desenvolvedores compartilharem suas experiências, que chamamos de <a href="https://share.dev.br/" >Dev Share</a> 
-                      tendo o objetivo de atingir um maior número de desenvolvedores com artigos das mais diversas áreas da tecnogia.`,
+  Tive início na carreira dentro da universidade, atuando em projetos de pesquisa ensino e extenção, 
+  foi quando percebi o que realmente nasci para fazer: <strong>codar</strong>, adoro construir templates de zero, sem a 
+  necessidade de utilizar qualquer framework css, quanto maior o desafio, melhor!
+  </br> </br> 
+  Meu primeiro emprego foi em uma <strong>multinacional</strong>, que me proporcionou experiências incríveis que me fizeram crescer ainda mais como profissional, 
+  a partir daí começaram os projetos externos das mais diversas formas, websites, aplicativos, sistemas, que me fizeram adquirir um vasto
+  conhecimento nas diversas linguagens de programação hoje utilizadas pelo mercado.
+  </br> </br> 
+  Contínuo investindo cada vez mais na minha carreira como desenvolvedor, estudando e passando um pouco da minha experiência para meus colegas da área, sempre em contato com a comunidade. Com esse intuito criamos uma plataforma para os desenvolvedores compartilharem suas experiências, que chamamos de <a href="https://share.dev.br/" >Dev Share</a> 
+  tendo o objetivo de atingir o maior número de desenvolvedores com artigos das mais diversas áreas da tecnologia.`,
   ABOUT_CARD_TITLE_ONE: "Academia",
   ABOUT_CARD_DESCRIPTION_ONE:
     "Graduado em Ciência da computação pela Universidade Estado do Rio Grande do Norte - UERN.",
