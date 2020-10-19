@@ -9,7 +9,7 @@ export default {
   BANNER_TITLE: "Wilton Junior",
   BANNER_SUB_TITLE: "Full Stack Developer",
   BANNER_SUB_PARAGRAPH_ONE: `Programador full-stack, apaixonado pelo desenvolvimento de software, graduado em <strong>Cientista da computação</strong>, pela <strong>Universidade Estatual do Rio Grande do Norte - UERN</strong>, atuando desde de 2016 em desenvolvimento 
-  de sistemas web e mobile. </br> </br> Utilizando as mais diversar tecnologias da atulidade, com aplicabilidade na construção de aplicações hibridas, resposivas e cross browser. Atualmente atuando como líder de projeto.`,
+  de sistemas web e mobile. </br> </br> Utilizando as mais diversar tecnologias da atualidade, com aplicabilidade na construção de aplicações hibridas, resposivas e cross browser. Atualmente atuando como líder de projeto.`,
   BANNER_BUTTON_PORTFOLIO: "Portfolio",
   BANNER_BUTTON_CONTACT: "Contato",
 
