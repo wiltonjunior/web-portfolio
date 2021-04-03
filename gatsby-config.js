@@ -27,21 +27,14 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-plugin-webfonts`,
+      resolve: `gatsby-plugin-google-fonts`,
       options: {
-        fonts: {
-          google: [
-            {
-              family: "Roboto",
-              variants: ["300", "400", "500"],
-            },
-            {
-              family: "Montserrat",
-              variants: ["300", "400", "700"],
-            },
-          ],
-        },
-      },
+        fonts: [
+          `Montserrat`,
+          `source sans pro\:300,400,400i,700` // you can also specify font weights and styles
+        ],
+        display: 'swap'
+      }
     },
     {
       resolve: `gatsby-plugin-manifest`,
