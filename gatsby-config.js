@@ -36,17 +36,17 @@ module.exports = {
         display: 'swap'
       }
     },
-    {
-      resolve: `gatsby-plugin-manifest`,
-      options: {
-        name: `Wilton Júnior`,
-        short_name: `Wilton Júnior`,
-        start_url: `/`,
-        background_color: `#407BFF`,
-        theme_color: `#a2466c`,
-        display: `standalone`,
-      },
-    },
+    // {
+    //   resolve: `gatsby-plugin-manifest`,
+    //   options: {
+    //     name: `Wilton Júnior`,
+    //     short_name: `Wilton Júnior`,
+    //     start_url: `/`,
+    //     background_color: `#407BFF`,
+    //     theme_color: `#a2466c`,
+    //     display: `standalone`,
+    //   },
+    // },
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-sass`,
     {
