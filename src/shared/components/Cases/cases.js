@@ -1,6 +1,7 @@
 import projeto1 from '@images/projects/project1.png'
 import projeto2 from '@images/projects/project2.png'
 import projeto3 from '@images/projects/project3.png'
+import projeto4 from '@images/projects/project4.png'
 
 export default [
   {
@@ -15,7 +16,7 @@ export default [
     link: 'https://maismilhas.com.br/'
   },
   {
-    title: "CASE_TWO_TITLE ",
+    title: "CASE_TWO_TITLE",
     image: projeto3,
     description: "CASE_TWO_DESCRIPTION",
     articles: [
@@ -37,14 +38,14 @@ export default [
     link: "http://easyinstitute.com.br/#/"
   },
   {
-    title: "CASE_THREE_TITLE",
-    image: projeto2,
-    description: "CASE_THREE_DESCRIPTION",
+    image: projeto4,
+    title: "CASE_FOUR_TITLE",
+    description: "CASE_FOUR_DESCRIPTION",
     articles: [
       {
-        description: 'CASE_THREE_ARTICLE_ONE_TITLE',
+        description: 'CASE_FOUR_ARTICLE_ONE_TITLE',
       }
     ],
-    link: "http://easyinstitute.com.br/#/"
+    link: "https://share.dev.br/"
   },
 ]

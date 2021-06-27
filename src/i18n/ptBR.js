@@ -74,4 +74,8 @@ export default {
   CASE_THREE_DESCRIPTION: "Lady page para divulgação e apresentação da empresa",
   CASE_THREE_ARTICLE_ONE_TITLE:
     "Aplicação multiplataforma cross browser, responsável por divulgar e apresentar a escola e suas unidades, constituído por uma área administrativa para controle das filiais. O front-end foi construído utilizando Angular.io e o back-end em Nodejs com arangoDB",
+
+  CASE_FOUR_TITLE: "Dev Share",
+  CASE_FOUR_DESCRIPTION: "O Dev Share é uma plataforma com objetivo de compartilhar informações a respeito dastendências do mercado de tecnologia",
+  CASE_FOUR_ARTICLE_ONE_TITLE: "A plataforma é constituida por um dashboard que gerencia os posts dos usuários que publicam as informações. A aplicação foi construída utilizando Nextjs na página pincipal e React na página de Admin. O back end foi feito utilizando Nodejs e MongoDB para armazenar os dados",
 }
