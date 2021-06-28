@@ -4,7 +4,7 @@ import Section from "@components/Section"
 import Container from "@components/Container"
 import Translate from "@components/Translate"
 
-import user from "@images/user.png"
+import user from "@images/user2.png"
 
 import "./styles.scss"
 
